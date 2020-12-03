@@ -1,0 +1,20 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/main
+ * -----------------------------------------------------------------------------
+ */
+
+main.site {
+  max-width: $site-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  
+  @include bp-sm() {
+    padding: $space-lg $space-lg 0 $space-lg;
+  }
+
+  @include bp-md() {
+    padding: $space-xxl $space-xxl 0 $space-xxl;
+  }
+}

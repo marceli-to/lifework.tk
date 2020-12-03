@@ -1,0 +1,101 @@
+/* Base */
+body,
+body *:not(html):not(style):not(br):not(tr):not(code) {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 	
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+  width: 100% !important;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 	
+}
+
+a {
+  color: #aaaaaa;
+}
+
+a img {
+  border: none;
+}
+
+/* Typography */
+
+h1 {
+
+}
+
+p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 0 !important;
+  max-width: 700px;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Layout */
+
+.wrapper {
+  background-color: #ffffff;
+  margin: 0;
+  max-width: 1500px;
+  padding: 20px 0;
+  width: 100%;
+  -premailer-cellpadding: 0;
+  -premailer-cellspacing: 0;
+  -premailer-width: 100%;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -premailer-cellpadding: 0;
+  -premailer-cellspacing: 0;
+  -premailer-width: 100%;
+}
+
+.content td.content__text {
+  padding: 20px 10px 20px 6.5%;
+}
+
+
+/* Body */
+.body {
+  background-color: #ffffff;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -premailer-cellpadding: 0;
+  -premailer-cellspacing: 0;
+  -premailer-width: 100%;
+}
+
+.inner-body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  max-width: 640px;
+  -premailer-cellpadding: 0;
+  -premailer-cellspacing: 0;
+  -premailer-width: 570px;
+}
+
+

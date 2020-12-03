@@ -1,0 +1,22 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/section
+ * -----------------------------------------------------------------------------
+ */
+
+section {
+
+  img {
+    @extend %is-responsive;
+  }
+}
+
+section.site__menu {
+  @include bp-sm() {
+    height: calc(100vh - #{$space-lg});
+  }
+  
+  @include bp-md() {
+    height: calc(100vh - #{$space-xxl});
+  }
+}

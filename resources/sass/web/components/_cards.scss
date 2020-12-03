@@ -1,0 +1,19 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: components/cards
+ * -----------------------------------------------------------------------------
+ */
+
+.cards {
+  > div {
+    @extend %inner-block;
+  }
+}
+
+.card {
+  display: block;
+  margin-bottom: 15px;
+  opacity: 0;
+  position: relative;
+
+}

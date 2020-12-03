@@ -1,0 +1,64 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/menu/site
+ * -----------------------------------------------------------------------------
+ */
+
+nav.site__nav {
+  align-items: flex-end;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .12s 0 ease-out;
+  z-index: -1;
+
+  &.is-visible {
+    height: calc(100% - (#{$header-height-sm} + #{$space-md}));
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity .12s .36s ease-out;
+    z-index: 1;
+  }
+
+  @include bp-sm() {
+    bottom: calc(#{$space-lg} - #{$space-xxs});
+    opacity: 1;
+    pointer-events: all;
+    position: absolute;
+    z-index: 1;
+  }
+
+  @include bp-md() {
+    bottom: calc(#{$space-xxl} - #{$space-xxs});
+  }
+
+
+  ul {
+    margin-bottom: calc(#{$space-lg} - #{$space-xxs});
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $color-black;
+    display: inline-block;
+    padding: $space-xxs 0;
+    transition: color .06s ease-in;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      @include bp-sm() {
+        color: $color-eggshell;
+        text-decoration: none;
+      }
+    }
+
+    &.is-active {
+      text-decoration: underline;
+    }
+  }
+
+}
