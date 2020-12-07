@@ -44,11 +44,11 @@ var Circles = (function() {
       _initAnimation(e.pageX, e.pageY);
     });
 
-    $(selectors.body).click(function(){
-      if (!isRunning) {
-        _initPartsAnimation();
-      }
-    });
+    // $(selectors.body).click(function(){
+    //   if (!isRunning) {
+    //     _initPartsAnimation();
+    //   }
+    // });
   };
 
   var _initAnimation = debounce(function(x,y) {

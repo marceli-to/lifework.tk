@@ -10,9 +10,15 @@
   display: grid;
 }
 
+.main-grid {
+  @include bp-sm() {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 %content-grid,
 .content-grid {
   display: grid;
   grid-template-columns: 1fr;
-
 }

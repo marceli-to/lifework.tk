@@ -5,5 +5,21 @@
  */
 
 h1 {
+  &.is-sm {
+    display: block;
+  }
 
+  &.is-md {
+    display: none;
+  }
+
+  @include bp-sm() {
+    &.is-sm {
+      display: none;
+    }
+  
+    &.is-md {
+      display: block;
+    } 
+  }
 }

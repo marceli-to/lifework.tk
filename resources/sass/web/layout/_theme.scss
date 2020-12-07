@@ -1,0 +1,41 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/themes
+ * -----------------------------------------------------------------------------
+ */
+
+section.theme-light {
+  
+  h2.underline {
+    span {
+      @extend %underline;
+    }
+  }
+
+  a {
+    @extend %underline;
+    @extend %underline-anchor;
+  }
+}
+
+section.theme-dark {
+  background-color: $color-ocean;
+
+  h2.underline {
+    span {
+      @extend %underline-dark;
+    }
+  }
+
+  a {
+    @extend %underline-dark;
+    @extend %underline-anchor-dark;
+  }
+
+  a:not(.btn-arrow) {
+    @extend %underline-dark;
+    @extend %underline-anchor-dark;
+    color: $color-black;
+  }
+
+}

@@ -19,4 +19,4 @@ body {
 }
 
 // Scrollbars
-@include scrollbar(8px, #999);
+@include scrollbar(8px, $color-eggshell);

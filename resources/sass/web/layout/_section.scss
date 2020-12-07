@@ -4,19 +4,34 @@
  * -----------------------------------------------------------------------------
  */
 
-section {
-
-  img {
-    @extend %is-responsive;
-  }
-}
-
 section.site__menu {
+  
   @include bp-sm() {
     height: calc(100vh - #{$space-lg});
+    padding: $space-lg 0;
   }
   
   @include bp-md() {
     height: calc(100vh - #{$space-xxl});
+    padding: $space-xxl 0;
+  }
+}
+
+section.site__content {
+  background-color: $color-eggshell;
+  border-right: 1px solid $color-black;
+  min-height: 100vh;
+  padding: $header-height-sm 0 $space-lg 0;
+  width: calc(100% - #{$space-lg});
+  
+  @include bp-sm() {
+    border-left: 1px solid $color-black;
+    min-height: 100vh;
+    padding-top: $space-lg;
+    width: 100%;
+  }
+  
+  @include bp-md() {
+    padding-top: 0;
   }
 }

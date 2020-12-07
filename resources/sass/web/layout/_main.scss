@@ -9,12 +9,13 @@ main.site {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  z-index: 5;
   
   @include bp-sm() {
-    padding: $space-lg $space-lg 0 $space-lg;
+    padding: 0 $space-lg;
   }
 
   @include bp-md() {
-    padding: $space-xxl $space-xxl 0 $space-xxl;
+    padding: 0 $space-xxl;
   }
 }

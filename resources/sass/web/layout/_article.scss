@@ -6,4 +6,57 @@
 
 article {
   @extend %word-break;
+  padding: $space-lg $space-sm;
+  position: relative;
+
+  @include bp-sm() {
+    padding-left: $space-lg;
+  }
+
+  @include bp-md() {
+    padding: $space-xxl $space-lg $space-xxl $space-xxl;
+  }
+
+  a {
+    color: $color-black;
+  }
 }
+
+/**
+ * Content articles
+ */
+
+article.content-text {
+  h2 {
+    margin-bottom: $space-sm;
+    @include bp-sm() {
+      margin-bottom: $space-lg;
+    }
+  }
+}
+
+/**
+ * Content list articles
+ */
+
+article.content-list {
+  border-bottom: 1px dashed $color-black;
+
+  h2 {
+    margin-bottom: $space-tiny;
+  }
+
+  .is-hidden {
+    display: none;
+    margin-top: $space-sm;
+    
+    @include bp-md() {
+      margin-top: $space-lg;
+    }
+
+    &.is-visible {
+      display: block !important;
+    }
+  }
+}
+

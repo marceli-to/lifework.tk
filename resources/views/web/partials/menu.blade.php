@@ -2,35 +2,38 @@
   <div>
     <ul>
       <li>
-        <a href="" class="is-active">Angebot</a>
+        <a href="{{route('page.services')}}">Angebot</a>
       </li>
       <li>
-        <a href="">Themen</a>
+        <a href="{{route('page.topics')}}">Themen</a>
       </li>
       <li>
-        <a href="">Veranstaltungen</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="">Über uns</a>
-      </li>
-      <li>
-        <a href="">Team</a>
-      </li>
-      <li>
-        <a href="">Netzwerk</a>
-      </li>
-      <li>
-        <a href="">Blog</a>
+        <a href="{{route('page.events')}}">Veranstaltungen</a>
       </li>
     </ul>
     <ul>
       <li>
-        <a href="">AGB</a>
+        <a href="{{route('page.about')}}">Über uns</a>
       </li>
       <li>
-        <a href="">Kontakt</a>
+        <a href="{{route('page.team')}}">Team</a>
+      </li>
+      <li>
+        <a href="{{route('page.network')}}">Netzwerk</a>
+      </li>
+      <li>
+        <a href="{{route('page.blog')}}">Blog</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="{{route('page.toc')}}">AGB</a>
+      </li>
+      <li>
+        <a href="{{route('page.contact')}}">Kontakt</a>
+      </li>
+      <li>
+        <a href="{{route('page.home')}}">Home</a>
       </li>
     </ul>
   </div>

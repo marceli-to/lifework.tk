@@ -26,7 +26,10 @@ strong, b {
 }
 
 p {
-	margin-bottom: $space-md;
+	margin-bottom: $space-sm;
+	@include bp-md() {
+		margin-bottom: $space-lg;
+	}
 	&:last-child {
 		margin-bottom: 0 !important;
 	}
@@ -34,4 +37,12 @@ p {
 
 small {
 	@include font-size($fs-sm);
+}
+
+.fs-sm {
+	@include font-size($fs-sm)
+}
+
+.fs-md {
+	@include font-size($fs-md)
 }

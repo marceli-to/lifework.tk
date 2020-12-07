@@ -17,7 +17,7 @@ nav.site__nav {
     opacity: 1;
     pointer-events: all;
     transition: opacity .12s .36s ease-out;
-    z-index: 1;
+    z-index: 301;
   }
 
   @include bp-sm() {
@@ -25,7 +25,7 @@ nav.site__nav {
     opacity: 1;
     pointer-events: all;
     position: absolute;
-    z-index: 1;
+    z-index: 301;
   }
 
   @include bp-md() {
