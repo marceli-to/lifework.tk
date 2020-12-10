@@ -7,8 +7,8 @@
 section.site__menu {
   
   @include bp-sm() {
-    height: calc(100vh - #{$space-lg});
-    padding: $space-lg 0;
+    height: 100vh;
+    padding: 0;
   }
   
   @include bp-md() {
@@ -27,7 +27,7 @@ section.site__content {
   @include bp-sm() {
     border-left: 1px solid $color-black;
     min-height: 100vh;
-    padding-top: $space-lg;
+    padding-top: 0;
     width: 100%;
   }
   

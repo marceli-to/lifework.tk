@@ -3,7 +3,7 @@ require('./bootstrap');
 
 // Vendor
 require('./vendor/lazysizes.js');
-require('./vendor/debounce.js');
+require('./vendor/scrollTo.js');
 
 // Modules
 require('./modules/menu.js');

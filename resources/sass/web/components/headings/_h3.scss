@@ -5,5 +5,5 @@
  */
 
 h3 {
-
+  @include font-size($fs-sm);
 }

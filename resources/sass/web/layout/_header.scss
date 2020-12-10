@@ -37,7 +37,7 @@ header.site__header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: calc(100vh - #{$space-lg});
+    height: 100vh;
     padding: 0;
     position: relative;
 

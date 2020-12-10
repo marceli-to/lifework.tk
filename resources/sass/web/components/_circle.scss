@@ -17,8 +17,7 @@
 }
 
 figure.circle {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: block;
   height: auto;
   max-width: 80%;
   opacity: 1;
@@ -48,6 +47,12 @@ figure.circle {
 
     &.is-visible {
       opacity: 1;
+    }
+  }
+
+  &.circle--inner {
+    svg {
+      left: 2px;
     }
   }
 }

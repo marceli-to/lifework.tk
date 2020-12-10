@@ -24,7 +24,7 @@ nav.site__nav {
     bottom: calc(#{$space-lg} - #{$space-xxs});
     opacity: 1;
     pointer-events: all;
-    position: absolute;
+    position: fixed;
     z-index: 301;
   }
 
@@ -32,13 +32,16 @@ nav.site__nav {
     bottom: calc(#{$space-xxl} - #{$space-xxs});
   }
 
-
   ul {
     margin-bottom: calc(#{$space-lg} - #{$space-xxs});
 
     &:last-of-type {
       margin-bottom: 0;
     }
+  }
+
+  ul ul {
+    margin-left: $space-sm;
   }
 
   a {
@@ -49,15 +52,15 @@ nav.site__nav {
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
       @include bp-sm() {
         color: $color-eggshell;
-        text-decoration: none;
       }
     }
 
     &.is-active {
-      text-decoration: underline;
+      @extend %underline-menu;
+      color: $color-black !important;
     }
   }
 

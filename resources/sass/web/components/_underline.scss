@@ -32,6 +32,12 @@
   text-decoration: none;
 }
 
+%underline-menu {
+  transition: all .1s ease-out;
+  box-shadow:  0 -.06em 0 0 $color-sand inset, 0 -.1em 0 0 $color-black inset;
+  text-decoration: none;
+}
+
 %underline-dark {
   transition: all .1s ease-out;
   box-shadow:  0 -.06em 0 0 $color-ocean inset, 0 -.1em 0 0 $color-black inset;

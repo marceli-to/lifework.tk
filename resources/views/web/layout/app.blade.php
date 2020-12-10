@@ -8,20 +8,30 @@
 <meta property="og:title" content="@if(trim($__env->yieldContent('seo_title')))@yield('seo_title') – {{config('seo.title')}}@else{{config('seo.title')}}@endif">
 <meta property="og:description" content="@if(trim($__env->yieldContent('seo_description')))@yield('seo_description')@else{{config('seo.description')}}@endif">
 <meta property="og:url" content="{{url()->current()}}">
-<meta property="og:image" content="@if(trim($__env->yieldContent('og_image')))@yield('og_image')@else{{ asset('assets/img/lifework-og.jpg') }}@endif">
+<meta property="og:image" content="{{ asset('assets/img/lifework-og.png') }}">
 <meta property="og:site_name" content="{{config('seo.title')}}">
-<meta name="theme-color" content="#ffffff">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d7cdc3">
+<meta name="msapplication-TileColor" content="#d7cdc3">
+<meta name="theme-color" content="#d7cdc3">
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 <meta name="format-detection" content="telephone=no">
 <link href="{{ asset('assets/css/app.css') }}" type="text/css" rel="stylesheet" />
 <script src="{{ asset('assets/js/modernizr.min.js') }}"></script>
 </head>
 <body>
-@include('web.partials.circle')
+@if (request()->routeIs('page.home'))
+  @include('web.partials.circles-home')
+@else
+  @include('web.partials.circles')
+@endif
 <main role="main" class="site">
-    <div class="main-grid">
-      @include('web.partials.header')
-      @yield('content')
-    </div>
+  <div class="main-grid">
+    @include('web.partials.header')
+    @yield('content')
+  </div>
 </main>
 @include('web.partials.footer')

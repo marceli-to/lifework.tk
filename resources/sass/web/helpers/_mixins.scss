@@ -306,7 +306,7 @@
 }
 
 @mixin bp-md {
-	@media only screen and (min-width: $bp-md) {
+	@media only screen and (min-width: $bp-md) and (min-height: $bp-sm) {
 		@content;
 	}
 }

@@ -4,35 +4,23 @@
  * -----------------------------------------------------------------------------
  */
 
-form.add-product {
-  align-items: center;
-  background-color: $color-white;
-  border-top: 1px solid $color-black;
-  border-bottom: 2px solid $color-black;
-  display: flex;
-  justify-content: space-between;
-  @include font-size($fs-sm);
-  margin-bottom: $space-xl;
-  max-width: 375px;
-  min-height: 60px;
-  left: 0;
-  padding: $space-sm 0;
+form.events {
 
-  @include bp-sm() {
-    margin-top: $space-xl;
-    padding: $space-sm 0;
-    position: relative;
-  }
-
-  > div {
-    align-items: center;
+  .form-group {
     display: flex;
-    justify-content: flex-start;
+    max-width: 480px;
+    
+    label {
+      flex: 0 0 105px;
+  
+      @include bp-md() {
+        flex: 0 0 155px;
+      }
+    }
   }
 
-  input[type=number] {
-    border-bottom: 1px solid $color-black;
-    margin-right: $space-xs;
+  header {
+    margin-bottom: $space-sm;
   }
 }
 

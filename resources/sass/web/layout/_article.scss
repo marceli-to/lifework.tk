@@ -6,15 +6,17 @@
 
 article {
   @extend %word-break;
-  padding: $space-lg $space-sm;
   position: relative;
 
-  @include bp-sm() {
-    padding-left: $space-lg;
-  }
-
-  @include bp-md() {
-    padding: $space-xxl $space-lg $space-xxl $space-xxl;
+  .content-list__inner,
+  .content-text__inner {
+    padding: $space-lg $space-sm;
+    @include bp-sm() {
+      padding-left: $space-lg;
+    }
+    @include bp-md() {
+      padding: $space-xxl $space-lg $space-xxl $space-xxl;
+    }
   }
 
   a {
@@ -23,7 +25,7 @@ article {
 }
 
 /**
- * Content articles
+ * Content text articles
  */
 
 article.content-text {
@@ -48,14 +50,101 @@ article.content-list {
 
   .is-hidden {
     display: none;
+    &.is-visible {
+      display: block !important;
+    }
+  }
+
+  .content-list__body {
     margin-top: $space-sm;
-    
     @include bp-md() {
       margin-top: $space-lg;
     }
+  }
+}
 
-    &.is-visible {
-      display: block !important;
+/**
+ * Team
+ */
+
+article.content-list--team {
+ 
+  .content-list__media {
+    padding-right: $space-sm;
+    
+    @include bp-md() {
+      padding-right: $space-lg;
+    }
+
+    figure {
+      display: flex;
+
+      img {
+        @extend %is-responsive;
+        max-width: 120px;
+        
+        @include bp-md() {
+          max-width: 240px;
+        }
+      }
+
+      figcaption {
+        padding-left: $space-sm;
+        -ms-word-break: normal;
+        word-break: normal;
+        word-break: normal;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        hyphens: none;
+
+        @include bp-sm() {
+          padding-left: $space-lg;
+        }
+
+        p {
+          @include font-size($fs-sm);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Events
+ */
+
+article.content-list--events {
+
+  > div {
+    @include bp-md() {
+      padding-top: $space-lg;
+    }
+  }
+
+  h3 {
+    @include bp-md() {
+      min-height: $space-lg;
+    }
+  }
+
+  .content-list__body {
+    @include font-size($fs-sm);
+  }
+
+  form {
+    border-top: 1px dashed $color-white;
+    @include font-size($fs-sm);
+    
+    > div {
+      padding: $space-sm $space-sm;
+    
+      @include bp-sm() {
+        padding-left: $space-lg;
+      }
+  
+      @include bp-md() {
+        padding: $space-lg $space-lg $space-xxl $space-xxl;
+      }
     }
   }
 }

@@ -11,45 +11,41 @@ fieldset {
 	}
 }
 
-// Input
+
 .form-group {
 	align-items: center;
 	display: block;
-	margin-bottom: $space-md;
+	margin-bottom: $space-xs;
 	position: relative;
-
-	@include bp-lg() {
-		margin-bottom: $space-lg;
-	}
 }
 
-.form-grid {
-	margin-bottom: $space-md;
-
-	@include bp-sm() {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: $space-md;
+.form-group-button {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: $space-sm;
+	
+	@include bp-md() {
+		margin-top: $space-lg;
 	}
 
-	.form-group {
-		margin-bottom: $space-md;
-		@include bp-sm() {
-			margin-bottom: 0;
-		}
-	}
 }
 
 // Radio/Checkboxes
 .form-group-radio,
 .form-group-checkbox {
 	display: flex;
-	margin-bottom: $space-sm;
+	margin-bottom: $space-xs;
+	margin-top: $space-sm;
 	position: relative;
 
 	> div {
-		flex: 0 0 35px;
-		padding-top: 3px;
+		flex: 0 0 25px;
+		padding-top: 0;
+
+		@include bp-md() {
+			flex: 0 0 35px;
+			padding-top: 3px;
+		}
 	}
 
 	input[type=radio], 
@@ -62,6 +58,7 @@ fieldset {
 		left: 0;
 		top: 3px;
 		z-index: 1;
+
 	}
 
 	input[type=radio]:checked + .radio span, 
@@ -71,29 +68,40 @@ fieldset {
 
 	.checkbox {
 		border: 1px solid $color-black;
-    height: 20px;
+		background-color: $color-white;
+    height: 16px;
     position: relative;
-		width: 20px;
+		width: 16px;
 		
 		span {
 			height: 14px;
-			left: 2px;
-			top: 2px;
+			left: 0px;
+			top: 0px;
 			position: absolute;
 			width: 14px;
+		}
+
+		@include bp-md() {
+			height: 20px;
+			width: 20px;
+
+			span {
+				height: 18px;
+				width: 18px;
+			}
 		}
 	}
 
 	label {
 		a {
-			color: $color-black;
+			box-shadow: none !important;
+			color: $color-white !important;
 			&:hover {
-				color: $color-black;
+				color: $color-black !important;
 				text-decoration: none;
 			}
 		}
 	}
-
 }
 
 // Buttons

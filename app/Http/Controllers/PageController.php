@@ -49,6 +49,15 @@ class PageController extends BaseController
   }
 
   /**
+   * Veranstaltungen
+   */
+
+  public function thankYou()
+  {
+    return view($this->viewPath . 'events-thank-you', ['title' => 'Veranstaltungen']);
+  }
+
+  /**
    * Über uns
    */
 

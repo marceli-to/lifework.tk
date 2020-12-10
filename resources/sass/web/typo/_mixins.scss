@@ -172,8 +172,21 @@
       @if map-has-key($fs-breakpoints, $fs-breakpoint) {
         $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
       }
-      @media screen and (min-width: $fs-breakpoint) {
-        @include make-font-size($fs-font-size);
+
+
+      // @media screen and (min-width: $fs-breakpoint) {
+      //   @include make-font-size($fs-font-size);
+      // }
+      
+      @if $fs-breakpoint == 1200px {
+        @media screen and (min-width: $fs-breakpoint) and (min-height: $bp-sm) {
+          @include make-font-size($fs-font-size);
+        }
+      }
+      @else {
+        @media screen and (min-width: $fs-breakpoint) {
+          @include make-font-size($fs-font-size);
+        }
       }
     }
   }

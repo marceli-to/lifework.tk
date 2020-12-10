@@ -5,6 +5,7 @@
  */
 
 h1 {
+
   &.is-sm {
     display: block;
   }
@@ -14,12 +15,23 @@ h1 {
   }
 
   @include bp-sm() {
+
     &.is-sm {
       display: none;
     }
   
     &.is-md {
+      background-color: $color-sand;
       display: block;
+      position: fixed;
+      top: $space-lg;
+      z-index: 401;
     } 
+  }
+
+  @include bp-md() {
+    &.is-md {
+      top: $space-xxl;
+    }
   }
 }

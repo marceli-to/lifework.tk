@@ -13,15 +13,15 @@ input[type=time],
 textarea,
 select,
 button {
-	background-color: transparent;
+	background-color: $color-white;
 	border-radius: 0;
 	border: none;
-	border-bottom: 1px solid $color-black;
+	border: 1px solid $color-black;
 	color: $color-black;
 	display: block;
 	@include font-regular();
 	@include font-size($fs-sm);
-	padding: 8px 4px;
+	padding: $space-xxs;
 	position: relative;
 	outline: none !important;
 	width: 100%;

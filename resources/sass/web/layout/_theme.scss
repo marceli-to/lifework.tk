@@ -27,12 +27,12 @@ section.theme-dark {
     }
   }
 
-  a {
-    @extend %underline-dark;
-    @extend %underline-anchor-dark;
-  }
+  // a {
+  //   @extend %underline-dark;
+  //   @extend %underline-anchor-dark;
+  // }
 
-  a:not(.btn-arrow) {
+  a:not(.btn-arrow):not(.btn-primary) {
     @extend %underline-dark;
     @extend %underline-anchor-dark;
     color: $color-black;
