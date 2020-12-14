@@ -55,16 +55,16 @@ var Circles = (function() {
     var pos = _getMousePosition(x,y);
     switch(pos) {
       case 'tl':
-        _animate(1);
+        _animate(3);
       break;
       case 'tr':
-        _animate(3);
+        _animate(2);
       break;
       case 'bl':
         _animate(4);
       break;
       case 'br':
-        _animate(2);
+        _animate(1);
       break;
     }
   }, 0);

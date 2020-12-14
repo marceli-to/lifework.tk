@@ -22,6 +22,6 @@ return [
   |
   */
 
-  'description' => 'illustration | design | switzerland',   
+  'description' => '',   
 
 ];
