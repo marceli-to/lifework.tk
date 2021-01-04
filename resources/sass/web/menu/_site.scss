@@ -44,6 +44,14 @@ nav.site__nav {
     margin-left: $space-sm;
   }
 
+  li {
+    &.is-home {
+      @include bp-sm() {
+        display: none;
+      }
+    }
+  }
+
   a {
     color: $color-black;
     display: inline-block;
@@ -63,5 +71,4 @@ nav.site__nav {
       color: $color-black !important;
     }
   }
-
 }

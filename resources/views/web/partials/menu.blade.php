@@ -34,7 +34,7 @@
       <li>
         <a href="{{route('page.contact')}}" class="{{ request()->routeIs('page.contact') ? 'is-active' : '' }}">Kontakt</a>
       </li>
-      <li>
+      <li class="is-home">
         <a href="{{route('page.home')}}">Home</a>
       </li>
     </ul>
