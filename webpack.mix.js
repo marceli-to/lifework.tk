@@ -6,11 +6,9 @@ mix.webpackConfig({
         alias: {
             //'vue$': 'vue/dist/vue.esm.js',
             '@': __dirname + '/resources/js/dashboard/',
-            '@shop': __dirname + '/resources/js/web/shop/',
         },
     },
 });
-
 
 /*
  |--------------------------------------------------------------------------
@@ -25,7 +23,6 @@ mix.webpackConfig({
 
 // Web
 mix.sass('resources/sass/web/app.scss', 'public/assets/css/app.css').options({processCssUrls: false}).version();
-mix.js('resources/js/web/shop/app.js', 'public/assets/js/shop.js').version();
 mix.js('resources/js/web/app.js', 'public/assets/js/app.js');
       
 // Dashboard

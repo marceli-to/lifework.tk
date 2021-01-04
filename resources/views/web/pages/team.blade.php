@@ -16,8 +16,8 @@
       <figure>
         <img src="/assets/img/lifework-theres-hofmann.png" height="359" width="270" alt="Theres Hofmann">
         <figcaption>
-          <p>Theres Hofmann<br>Projektarbeiterin und Dozentin<br>Multiplikatorin<br>Infans Konzept</p>
-          <p><a href="" target="_blank" rel="noopener" title="Download CV Theres Hofmann">CV</a></p>
+          <p>Theres Hofmann</p>
+          <p><a href="javascript:;" class="js-btn-cv" title="CV Theres Hofmann">CV</a></p>
         </figcaption>
       </figure>
     </div>
@@ -28,15 +28,15 @@
       <h2>Kathrin Toberer:</h2>
       <a href="javascript:;" class="js-btn-article">«Das Menschen-Mögliche in den Alltag bringen»</a>
       <div class="content-list__body is-hidden">
-        <p>Menschen sollten auch im Beruf das tun können, was sie gerne tun. Mit Begeisterung und Engagement etwas umzusetzen, macht uns persönlich reich und bringt Erfolg. Mit Transparenz und Authentizität kommen wir beim Gegenüber an und ermöglichen Zusammenarbeit. Mit Gleichgesinnten teile ich gerne mein Know-How in den Themen Vereinbarkeit von Beruf und Familie, bildungsorientierte Pädagogik, Change-Management sowie Führung und Organisation.</p>
+        <p>Transformation entspricht dem Wesen des Menschen und damit dem Bestreben, das eigene Leben persönlich zu leben. Ich begleite Menschen in herausfordernden Situationen und bin bei der Entwicklung von Projekten mit dabei. Meine Themen sind Familie und Beruf, Älter werden im Beruf, Führung, Integration und Zusammenhalt.</p>
       </div>
     </div>
     <div class="content-list__media is-hidden">
       <figure>
         <img src="/assets/img/lifework-theres-hofmann.png" height="359" width="270" alt="Theres Hofmann">
         <figcaption>
-          <p>Kathrin Toberer<br>Projektarbeiterin und Dozentin<br>Multiplikatorin<br>Infans Konzept</p>
-          <p><a href="" target="_blank" rel="noopener" title="Download CV Theres Hofmann">CV</a></p>
+          <p>Kathrin Toberer</p>
+          <p><a href="javascript:;" class="js-btn-cv" title="CV Theres Hofmann">CV</a></p>
         </figcaption>
       </figure>
     </div>

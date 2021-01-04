@@ -48,6 +48,28 @@ article.content-list {
     margin-bottom: $space-tiny;
   }
 
+  ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 1em;
+  }
+
+  ul > li:before {
+    display: inline-block;
+    content: "–";
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  li {
+    display: list-item;
+    margin-bottom: $space-xxs;
+
+    @include bp-sm() {
+      margin-bottom: $space-xs;
+    }
+  }
+
   .is-hidden {
     display: none;
     &.is-visible {
@@ -59,6 +81,10 @@ article.content-list {
     margin-top: $space-sm;
     @include bp-md() {
       margin-top: $space-lg;
+    }
+
+    h3 {
+      @include font-size($fs-md);
     }
   }
 }
