@@ -1,17 +1,19 @@
 <?php
 namespace App\Http\Controllers;
 use App\Http\Controllers\BaseController;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class PageController extends BaseController
 {
   protected $viewPath = 'web.pages.';
 
-  public function __construct()
+  public function __construct(Post $post)
   {
     parent::__construct();
+    $this->post = $post;
   }
-
+  
   /**
    * Home
    */
@@ -90,7 +92,8 @@ class PageController extends BaseController
 
   public function blog()
   {
-    return view($this->viewPath . 'blog', ['title' => 'Blog']);
+    $posts = $this->post->published()->orderBy('date', 'DESC')->get();
+    return view($this->viewPath . 'blog', ['title' => 'Blog', 'posts' => $posts]);
   }
 
   /**
