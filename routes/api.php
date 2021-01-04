@@ -21,26 +21,18 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::middleware('auth:sanctum')->group(function() {
   Route::get('user', 'Api\UserController@find');
 
+  // Post
+  Route::get('post', 'Api\PostController@get');
+  Route::get('post/{post}', 'Api\PostController@find');
+  Route::post('post', 'Api\PostController@store');
+  Route::put('post/{post}', 'Api\PostController@update');
+  Route::get('post/state/{post}', 'Api\PostController@toggle');
+  Route::delete('post/{post}', 'Api\PostController@destroy');
+
   // Upload
   Route::post('image/upload','Api\UploadController@image');
   Route::post('file/upload','Api\UploadController@file');
   Route::get('files/get','Api\UploadController@getFiles');
-
-  // // About
-  // Route::get('about', 'Api\AboutController@get');
-  // Route::get('about/{about}', 'Api\AboutController@find');
-  // Route::post('about', 'Api\AboutController@store');
-  // Route::put('about/{about}', 'Api\AboutController@update');
-  // Route::get('about/state/{about}', 'Api\AboutController@toggle');
-  // Route::delete('about/{about}', 'Api\AboutController@destroy');
-
-  // // About images
-  // Route::get('about/image/state/{aboutImage}', 'Api\AboutImageController@toggle');
-  // Route::put('about/image/{aboutImage}', 'Api\AboutImageController@coords');
-  // Route::post('about/image/order', 'Api\AboutImageController@order');
-  // Route::post('about/image', 'Api\AboutImageController@store');
-  // Route::delete('about/image/{aboutImage}', 'Api\AboutImageController@destroy');
-
-
+  
 });
 

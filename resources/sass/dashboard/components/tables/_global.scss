@@ -12,7 +12,7 @@ table {
   }
 
   th {
-    @include font-bold();
+    @include font-regular();
     @include font-size($fs-sm);
     padding: 6px 6px 6px 0;
     text-align: left;

@@ -1,7 +1,5 @@
 <?php
 namespace App\Providers;
-use App\Observers\AboutObserver;
-use App\Models\About;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -24,6 +22,5 @@ class AppServiceProvider extends ServiceProvider
   public function boot()
   {
     // setLocale(LC_ALL, 'de_CH.UTF-8');
-    About::observe(AboutObserver::class);
   }
 }

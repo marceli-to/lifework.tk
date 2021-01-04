@@ -27,6 +27,10 @@ form.events {
 // Auth - login
 form.auth {
   max-width: 480px;
+
+  label {
+    margin-bottom: $space-xxs;
+  }
 }
 
 // Auth - recover password

@@ -27,6 +27,6 @@
   }
 
   .notification-title {
-    @include font-bold();
+    @include font-regular();
   }
 }

@@ -62,7 +62,6 @@
         color: $color-white;
         @include font-regular();
         @include font-size($fs-xs);
-        @include letter-spacing();
         left: 10px;
         padding: 5px;
         position: absolute;

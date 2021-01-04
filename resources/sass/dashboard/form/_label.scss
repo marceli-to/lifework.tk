@@ -5,10 +5,9 @@
  */
  
 label {
-  color: $color-medium-grey;
+  color: $color-black;
   display: block;
   @include font-size($fs-sm);
-  @include letter-spacing();
   margin-bottom: 10px;
 
   &.form-control {

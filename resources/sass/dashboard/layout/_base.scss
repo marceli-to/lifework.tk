@@ -15,10 +15,12 @@ body {
 }
 
 body {
-	color: $color-dark;
+	background-color: $color-white;
+	color: $color-black;
 	@include font-smoothing();
 	@include font-regular();
-	@include font-size($fs-sm);
+	@include font-size($fs-md);
+	position: relative;
 	text-rendering: optimizeLegibility;
 }
 

@@ -15,7 +15,6 @@ export default {
     title: 'Text',
     items: [
       { title: 'Worttrennung deaktivieren', inline: 'span', styles: { "white-space": 'nowrap' } },
-      { title: 'Kleine Schrift', block: 'p', classes: 'fs-sm' },
       { title: 'Überschrift 1', block : 'h1'},
       { title: 'Überschrift 2', block : 'h2'},
       { title: 'Überschrift 3', block : 'h3'},

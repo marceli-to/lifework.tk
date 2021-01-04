@@ -5,6 +5,6 @@
  */
 
 h3 {
-  @include font-bold();
+  @include font-regular();
   margin-bottom: 5px;
 }

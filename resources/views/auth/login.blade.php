@@ -2,10 +2,10 @@
 @section('seo_title', 'Login')
 @section('seo_description', '')
 @section('content')
-<section>
-  <article>
-    <h1>Login</h1>
-    <div>
+<section class="site__content theme-dark">
+  <article class="content-text">
+    <div class="content-text__inner">
+      <h2>Login</h2>
       @if ($errors->any())
         <x-alert type="danger" message="{{__('messages.general_error')}}" />
       @endif

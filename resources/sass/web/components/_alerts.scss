@@ -13,13 +13,11 @@
   max-width: 480px;
 
   &.alert--danger {
-    //border-color: $color-danger;
     color: $color-danger;
   }
 
   &.alert--success {
-    border-color: $color-success;
-    color: $color-success;
+    color: $color-white;
   }
 
   &.alert--narrow {

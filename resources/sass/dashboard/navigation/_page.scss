@@ -5,9 +5,8 @@
  */
 
 nav.page {
-
   background-color: $color-white;
-  border-left: 2px solid $color-light;
+  border-left: 1px solid $color-sand;
   height: 100%;
   right: 0;
   position: fixed;
@@ -50,7 +49,7 @@ nav.page {
   }
 
   ul {
-    border-top: 2px solid $color-light;
+    border-top: 1px solid $color-sand;
     width: 100%;
   }
 
@@ -59,10 +58,9 @@ nav.page {
   
     a {
       align-items: center;
-      color: $color-dark;
-      border-bottom: 2px solid $color-light;
+      color: $color-black;
+      border-bottom: 1px solid $color-sand;
       display: flex;
-      @include letter-spacing();
       @include font-size($fs-sm);
       @include responsive-prop('padding-bottom', $space-sm);
       padding-left: 20px;
@@ -73,7 +71,7 @@ nav.page {
 
       &.is-active,
       &:hover {
-        background-color: $color-light;
+        color: $color-sand;
       }
     }
 

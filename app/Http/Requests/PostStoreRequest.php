@@ -22,7 +22,8 @@ class PostStoreRequest extends FormRequest
   public function rules()
   {
     return [
-      'size' => 'required',
+      'date' => 'required',
+      'title' => 'required',
     ];
   }
 
@@ -34,9 +35,13 @@ class PostStoreRequest extends FormRequest
   public function messages()
   {
     return [
-      'size.required' => [
-        'field' => 'size',
-        'error' => 'Grösse wird benötigt!'
+      'date.required' => [
+        'field' => 'date',
+        'error' => 'Datum wird benötigt!'
+      ],
+      'title.required' => [
+        'field' => 'title',
+        'error' => 'Titel wird benötigt!'
       ],
     ];
   }

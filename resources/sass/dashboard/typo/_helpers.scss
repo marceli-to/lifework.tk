@@ -19,7 +19,7 @@
  */
 
 strong, b {
-	@include font-bold();
+	@include font-regular();
 }
 
 p {
