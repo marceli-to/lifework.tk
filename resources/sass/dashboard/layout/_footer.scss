@@ -6,7 +6,7 @@
 
 footer.page-footer {
   background-color: $color-white;
-  box-shadow: $box-shadow-lg;
+  border-top: 1px solid $color-sand;
   bottom: 0;
   left: 0;
   @include responsive-prop('height', $footer-heights);
@@ -71,7 +71,7 @@ footer.page-footer {
 
 footer.module-footer {
   background-color: $color-white;
-  border-top: 2px solid $color-light;
+  border-top: 1px solid $color-sand;
   bottom: 0;
   left: 0;
   position: fixed;
