@@ -1,10 +1,11 @@
-@extends('errors.app')
+@extends('web.layout.app')
 @section('content')
-<section class="content">
-  <div class="content-grid">
-    <div class="span">
-      <h1>Fehler 503</h1>
+<section class="site__content theme-light">
+  <article class="content-text">
+    <div class="content-text__inner">
+      <h2 class="underline"><span>Webseite vorübergehend nicht verfügbar</span></h2>
+      <p>Wir überarbeiten zur Zeit unsere Webseite und sind gleich wieder da.</p>
     </div>
-  </div>
+  </article>
 </section>
 @endsection
