@@ -14,7 +14,7 @@
     </div>
     <div class="content-list__media is-hidden">
       <figure>
-        <img src="/assets/img/lifework-theres-hofmann.png" height="359" width="270" alt="Theres Hofmann">
+        <img src="/assets/img/dummy.png" height="359" width="270" alt="Theres Hofmann">
         <figcaption>
           <p>Theres Hofmann</p>
           <p><a href="javascript:;" class="js-btn-cv" title="CV Theres Hofmann">CV</a></p>

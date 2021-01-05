@@ -49,9 +49,16 @@ article.content-list {
   }
 
   ul {
-      list-style: none;
-      margin-left: 0;
-      padding-left: 1em;
+    list-style: none;
+    margin: 0;
+    padding-left: 1em;
+    margin-bottom: $space-sm;
+    @include bp-md() {
+      margin-bottom: $space-lg;
+    }
+    &:last-of-type {
+      margin-bottom: 0 !important;
+    }
   }
 
   ul > li:before {
@@ -64,7 +71,6 @@ article.content-list {
   li {
     display: list-item;
     margin-bottom: $space-xxs;
-
     @include bp-sm() {
       margin-bottom: $space-xs;
     }
@@ -85,6 +91,7 @@ article.content-list {
 
     h3 {
       @include font-size($fs-md);
+      margin-bottom: $space-xs;
     }
   }
 }
