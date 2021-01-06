@@ -14,10 +14,10 @@
     </div>
     <div class="content-list__media is-hidden">
       <figure>
-        <img src="/assets/img/dummy.png" height="359" width="270" alt="Theres Hofmann">
+        <img src="/assets/img/dummy.png" height="359" width="270" alt="Horst Henrichs">
         <figcaption>
-          <p>Theres Hofmann</p>
-          <p><a href="javascript:;" class="js-btn-cv" title="CV Theres Hofmann">CV</a></p>
+          <p>Horst Henrichs</p>
+          <p><a href="" title="CV Horst Henrichs">CV</a></p>
         </figcaption>
       </figure>
     </div>

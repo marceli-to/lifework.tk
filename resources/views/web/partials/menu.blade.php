@@ -7,6 +7,9 @@
       <li>
         <a href="{{route('page.events')}}" class="{{ request()->routeIs('page.events') ? 'is-active' : '' }}">Veranstaltungen</a>
       </li>
+      <li>
+        <a href="{{route('page.blog')}}" class="{{ request()->routeIs('page.blog') ? 'is-active' : '' }}">Blog</a>
+      </li>
     </ul>
     <ul>
       <li>
@@ -17,9 +20,6 @@
       </li>
       <li>
         <a href="{{route('page.network')}}" class="{{ request()->routeIs('page.network') ? 'is-active' : '' }}">Netzwerk</a>
-      </li>
-      <li>
-        <a href="{{route('page.blog')}}" class="{{ request()->routeIs('page.blog') ? 'is-active' : '' }}">Blog</a>
       </li>
     </ul>
     <ul>

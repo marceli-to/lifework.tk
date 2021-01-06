@@ -60,7 +60,7 @@
       <h2>Coaching:</h2>
       <a href="javascript:;" class="js-btn-article">Beruflich und persönlich passend</a>
       <div class="content-list__body is-hidden">
-        <p>Im Coaching begleiten wir Menschen oder Teams in Einrichtungen der familienergänzenden Betreuung in ihrem Entwicklungsprozess. Dabei liegt der Fokus auf den Voraussetzungen und Bedürfnissen, Mitteln und Möglichkeiten, um zu einem gelingenden Wirken zu finden - beruflich und persönlich.</p>
+        <p>Im Coaching begleiten wir Menschen oder Teams in Einrichtungen der familienergänzenden Betreuung in ihrem Entwicklungsprozess. Dabei liegt der Fokus auf den Voraussetzungen und Bedürfnissen, Mitteln und Möglichkeiten, um zu einem gelingenden Wirken zu finden &ndash; beruflich und persönlich.</p>
         <h3>Standortbestimmung bei Berufs- und Lebensübergängen</h3>
         <ul>
           <li>Schwangerschaft und Beruf</li>
@@ -78,7 +78,7 @@
         <h3>Führungscoaching</h3>
         <ul>
           <li>Unterstützung von Führungspersonen in Einrichtungen der familienergänzenden Betreuung in herausfordernden Situationen</li>
-          <li>Midlife Power in der Führung - Durchstarten in die zweite Berufshälfte</li>
+          <li>Midlife Power in der Führung &ndash; Durchstarten in die zweite Berufshälfte</li>
         </ul>
       </div>
     </div>

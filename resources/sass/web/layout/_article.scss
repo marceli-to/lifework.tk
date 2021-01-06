@@ -90,7 +90,7 @@ article.content-list {
     }
 
     h3 {
-      @include font-size($fs-md);
+      @include font-size($fs-sm);
       margin-bottom: $space-xs;
     }
   }
