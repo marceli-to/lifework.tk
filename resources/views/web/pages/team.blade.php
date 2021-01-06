@@ -17,7 +17,7 @@
         <img src="/assets/img/dummy.png" height="359" width="270" alt="Theres Hofmann">
         <figcaption>
           <p>Theres Hofmann</p>
-          <p><a href="javascript:;" class="js-btn-cv" title="CV Theres Hofmann">CV</a></p>
+          <p><a href="/assets/downloads/CV_Theres_Hofmann.pdf" target="_blank" title="CV Theres Hofmann">CV</a></p>
         </figcaption>
       </figure>
     </div>
@@ -36,7 +36,7 @@
         <img src="/assets/img/dummy.png" height="359" width="270" alt="Theres Hofmann">
         <figcaption>
           <p>Kathrin Toberer</p>
-          <p><a href="javascript:;" class="js-btn-cv" title="CV Theres Hofmann">CV</a></p>
+          <p><a href="/assets/downloads/CV_Kathrin_Toberer.pdf" target="_blank" title="CV Theres Hofmann">CV</a></p>
         </figcaption>
       </figure>
     </div>
