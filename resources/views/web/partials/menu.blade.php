@@ -2,12 +2,7 @@
   <div>
     <ul>
       <li>
-        <a href="{{route('page.services')}}" class="{{ request()->routeIs('page.services') ? 'is-active' : '' }}">
-          Angebot
-        </a>
-      </li>
-      <li>
-        <a href="{{route('page.topics')}}" class="{{ request()->routeIs('page.topics') ? 'is-active' : '' }}">Themen</a>
+        <a href="{{route('page.services')}}" class="{{ request()->routeIs('page.services') ? 'is-active' : '' }}">Angebot</a>
       </li>
       <li>
         <a href="{{route('page.events')}}" class="{{ request()->routeIs('page.events') ? 'is-active' : '' }}">Veranstaltungen</a>

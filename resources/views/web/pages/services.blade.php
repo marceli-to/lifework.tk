@@ -35,7 +35,7 @@
       <a href="javascript:;" class="js-btn-article">Wirkungsorientiert und sinnstiftend </a>
       <div class="content-list__body is-hidden">
         <p>Abgestimmt auf die Bedürfnisse und das Budget von Trägerschaften der familienergänzenden Betreuung, arrangieren wir Weiterbildung für Führungs- und Fachpersonen, die in ihrer Einrichtung die Qualität der Arbeit überdenken, verändern oder Neues anstossen möchten. Zum Wohl der Kinder und deren positiven Entwicklung und zugunsten einer stimmigen Zusammenarbeit zwischen allen Anspruchsgruppen.</p>
-        <h3>«bildungskrippen.ch»</h3>
+        <h3>bildungskrippen.ch</h3>
         <ul>
           <li>Einführung, Workshops und Coaching zum infans-Konzept der Frühpädagogik</li>
           <li>Netzwerkveranstaltungen</li>
