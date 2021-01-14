@@ -82,7 +82,7 @@
                 <input type="checkbox" name="toc" value="1" id="toc">
                 <div class="checkbox"><span></span></div>
               </div>
-              <label for="toc">Ich bin mit den <a href="">AGBs</a> einverstanden</label>
+              <label for="toc">Ich bin mit den <a href="{{route('page.toc')}}" target="_blank">AGBs</a> einverstanden</label>
             </div>
             <div class="form-group form-group-button">
               <input type="submit" class="btn-primary" value="anmelden">
