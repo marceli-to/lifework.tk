@@ -3,7 +3,7 @@ namespace App\Imports;
 use App\Models\Event;
 use Maatwebsite\Excel\Concerns\ToModel;
 
-class EventsImport implements ToModel
+class Events implements ToModel
 {
   /**
   * @param array $row
