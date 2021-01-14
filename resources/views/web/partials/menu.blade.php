@@ -19,7 +19,7 @@
         <a href="{{route('page.team')}}" class="{{ request()->routeIs('page.team') ? 'is-active' : '' }}">Team</a>
       </li>
       <li>
-        <a href="{{route('page.network')}}" class="{{ request()->routeIs('page.network') ? 'is-active' : '' }}">Netzwerk</a>
+        <a href="{{route('page.network')}}" class="{{ request()->routeIs('page.network') ? 'is-active' : '' }}">Netzwerkpartner</a>
       </li>
     </ul>
     <ul>

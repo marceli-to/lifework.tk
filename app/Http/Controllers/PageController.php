@@ -83,7 +83,7 @@ class PageController extends BaseController
 
   public function network()
   {
-    return view($this->viewPath . 'network', ['title' => 'Netzwerk']);
+    return view($this->viewPath . 'network', ['title' => 'Netzwerkpartner']);
   }
 
   /**
