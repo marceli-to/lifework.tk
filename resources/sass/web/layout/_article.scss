@@ -35,6 +35,17 @@ article.content-text {
       margin-bottom: $space-lg;
     }
   }
+
+  &.content-text--toc {
+    h3, h4, p {
+      @include font-size($fs-sm);
+      margin-bottom: $space-sm;
+    }
+
+    h4 {
+      margin-bottom: $space-xs;
+    }
+  }
 }
 
 /**
