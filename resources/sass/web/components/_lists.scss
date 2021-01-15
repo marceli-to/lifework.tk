@@ -6,6 +6,10 @@
 
 .list {
   max-width: 480px;
+
+  @include bp-lg() {
+    max-width: 560px;
+  }
   
   .list__item {
     border-bottom: 1px solid $color-black;

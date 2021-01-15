@@ -1,7 +1,7 @@
 @extends('web.layout.app')
 @section('seo_title', 'Veranstaltungen')
 @section('content')
-<section class="site__content theme-dark">
+<section class="site__content theme-dark" id="app">
   @if ($events)
     @foreach($events as $e)
       <article class="content-list content-list--events">
@@ -53,51 +53,9 @@
             </div>
           </div>
         </div>
-        <form class="events is-hidden">
-          @csrf
-          <input type="hidden" name="event_id" value="{{$e->id}}">
-          <div>
-            <header>Ja, ich melde mich an</header>
-            <div class="form-group">
-              <label>Vorname</label>
-              <input type="text" value="" name="">
-            </div>
-            <div class="form-group">
-              <label>Name</label>
-              <input type="text" value="" name="">
-            </div>
-            <div class="form-group">
-              <label>Strasse / Nr.</label>
-              <input type="text" value="" name="">
-            </div>
-            <div class="form-group">
-              <label>PLZ / Ort</label>
-              <input type="text" value="" name="">
-            </div>
-            <div class="form-group">
-              <label>Telefon P</label>
-              <input type="text" value="" name="">
-            </div>
-            <div class="form-group">
-              <label>Telefon G</label>
-              <input type="text" value="" name="">
-            </div>
-            <div class="form-group">
-              <label>E-Mail</label>
-              <input type="text" value="" name="">
-            </div>
-            <div class="form-group-checkbox">
-              <div>
-                <input type="checkbox" name="toc" value="1" id="toc">
-                <div class="checkbox"><span></span></div>
-              </div>
-              <label for="toc">Ich bin mit den <a href="{{route('page.toc')}}" target="_blank">AGBs</a> einverstanden</label>
-            </div>
-            <div class="form-group form-group-button">
-              <input type="submit" class="btn-primary" value="anmelden">
-            </div>
-          </div>
-        </form>
+        <section class="event-form is-hidden">
+          <register-form event-id="{{$e->id}}"></register-form>
+        </section>
       </article>        
     @endforeach
   @endif

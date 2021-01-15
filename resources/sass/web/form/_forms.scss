@@ -4,11 +4,15 @@
  * -----------------------------------------------------------------------------
  */
 
-form.events {
+.event-form {
 
   .form-group {
     display: flex;
     max-width: 480px;
+    
+    @include bp-lg() {
+      max-width: 560px;
+    }
     
     label {
       flex: 0 0 105px;

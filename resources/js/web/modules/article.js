@@ -40,15 +40,16 @@ var Article = (function() {
   };
 
   var _toggleArticleForm = function(el) {
-    el.parents('article').find('form.' + classes.hidden).toggleClass(classes.visible);
+    el.parents('article').find('.event-form.' + classes.hidden).toggleClass(classes.visible);
     el.parents('article').find(selectors.btnForm).closest('div').hide();
-    if (el.parents('article').find('form').hasClass(classes.visible)) {
-      $.scrollTo($(el.parents('article').find('form')), 200);
+    if (el.parents('article').find('.event-form').hasClass(classes.visible)) {
+      var form = $(el.parents('article').find('.event-form'))[0];
+      form.scrollIntoView();
     }
   };
 
   var _hideArticleForm = function(el) {
-    el.parents('article').find('form.' + classes.hidden).removeClass(classes.visible);
+    el.parents('article').find('.event-form.' + classes.hidden).removeClass(classes.visible);
     el.parents('article').find(selectors.btnForm).closest('div').show();
   };
 

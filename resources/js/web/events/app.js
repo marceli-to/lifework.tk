@@ -34,27 +34,20 @@ Vue.component('LoadingIndicator', LoadingIndicator);
 // import store from '@events/config/store';
 
 // Routes
-import routes from '@events/config/routes';
-const router = new VueRouter({ mode: 'history', routes: routes});
+// import routes from '@events/config/routes';
+// const router = new VueRouter({ mode: 'history', routes: routes});
 
 // App component
-// import AppComponent from '@events/App.vue';
-
-Vue.component('product-add', require('@events/views/shop/ProductAdd.vue').default);
-Vue.component('product-view', require('@events/views/shop/Product.vue').default);
-Vue.component('basket-preview', require('@events/views/shop/BasketPreview.vue').default);
-Vue.component('basket-view', require('@events/views/shop/Basket.vue').default);
-Vue.component('basket-summary-view', require('@events/views/shop/BasketSummary.vue').default);
-Vue.component('basket-item', require('@events/views/shop/BasketItem.vue').default);
-Vue.component('payment-view', require('@events/views/shop/Payment.vue').default);
+//import AppComponent from '@events/App.vue';
+Vue.component('register-form', require('@events/views/RegisterForm.vue').default);
 
 // Mount App
-if (document.getElementById("shop")) {
+if (document.getElementById("app")) {
   const app = new Vue({
     mixins: [],
     components: { 
     },
-    router,
+    // router,
     // store
-  }).$mount('#shop');
+  }).$mount('#app');
 }

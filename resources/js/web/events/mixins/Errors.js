@@ -52,7 +52,7 @@ export default {
       });
       this.errors = errors;
       this.isLoading = false;
-      this.$notify({ type: "error", text: `Bitte Eingaben prüfen!`});
+      //this.$notify({ type: "error", text: `Bitte Eingaben prüfen!`});
     },
 
     serverError(data) {

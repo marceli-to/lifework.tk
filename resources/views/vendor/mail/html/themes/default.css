@@ -1,7 +1,7 @@
 /* Base */
 body,
 body *:not(html):not(style):not(br):not(tr):not(code) {
-  font-family: Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
   font-weight: 400;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -61,7 +61,7 @@ h2 {
   color: #000000;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -179,6 +179,7 @@ img {
 /* Tables */
 
 .table table {
+  border-top: 1px solid #000;
   margin: 0 0 30px 0;
   max-width: 580px;
   width: 100%;
@@ -194,11 +195,6 @@ img {
   margin: 0;
 }
 
-.table table th:nth-child(3) {
-  text-align: right;
-  padding-right: 2px;
-}
-
 .table table td {
   border-bottom: 1px solid #000;
   color: #000000;
@@ -206,11 +202,13 @@ img {
   line-height: 18px;
   padding: 8px 0;
   margin: 0;
+  vertical-align: top;
 }
 
-.table table td:nth-child(3) {
-  padding-right: 2px;
+.table table td:nth-child(1) {
+  padding-right: 10px;
 }
+
 
 .content-cell {
   padding: 5px 40px;

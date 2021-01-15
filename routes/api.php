@@ -36,3 +36,7 @@ Route::middleware('auth:sanctum')->group(function() {
   
 });
 
+// Register endpoint
+Route::post('register', 'Api\RegisterController@store');
+
+

@@ -19,8 +19,7 @@ Route::get('/', 'PageController@index')->name('page.home');
 // Pages
 Route::get('/angebot', 'PageController@services')->name('page.services');
 Route::get('/themen', 'PageController@topics')->name('page.topics');
-Route::get('/veranstaltungen', 'EventController@index')->name('page.events');
-Route::get('/veranstaltungen/anmeldung-erfolgreich', 'PageController@thankYou')->name('page.events.thank-you');
+Route::get('/veranstaltungen', 'PageController@events')->name('page.events');
 Route::get('/ueber-uns', 'PageController@about')->name('page.about');
 Route::get('/team', 'PageController@team')->name('page.team');
 Route::get('/netzwerkpartner', 'PageController@network')->name('page.network');
@@ -30,9 +29,6 @@ Route::get('/kontakt', 'PageController@contact')->name('page.contact');
 
 // Url based images
 Route::get('/img/{template}/{filename}', 'ImageController@getResponse');
-
-// Import
-Route::get('/import', 'ImportController@import');
 
 /*
 |--------------------------------------------------------------------------
