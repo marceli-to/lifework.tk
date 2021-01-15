@@ -11,7 +11,3 @@ require('./modules/article.js');
 require('./modules/circles.js');
 // require('./modules/swiper.js');
 // require('./modules/loader.js');
-
-
-
-

@@ -2004,9 +2004,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_feather_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-feather-icons */ "./node_modules/vue-feather-icons/dist/vue-feather-icons.es.js");
-/* harmony import */ var _shop_mixins_Shop__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @shop/mixins/Shop */ "./resources/js/web/shop/mixins/Shop.js");
-/* harmony import */ var _shop_mixins_Helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @shop/mixins/Helpers */ "./resources/js/web/shop/mixins/Helpers.js");
-/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @shop/config/l18n */ "./resources/js/web/shop/config/l18n.js");
+/* harmony import */ var _shop_mixins_Shop__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @events/mixins/Shop */ "./resources/js/web/shop/mixins/Shop.js");
+/* harmony import */ var _shop_mixins_Helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @events/mixins/Helpers */ "./resources/js/web/shop/mixins/Helpers.js");
+/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @events/config/l18n */ "./resources/js/web/shop/config/l18n.js");
 //
 //
 //
@@ -2140,8 +2140,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_feather_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-feather-icons */ "./node_modules/vue-feather-icons/dist/vue-feather-icons.es.js");
-/* harmony import */ var _shop_mixins_Helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @shop/mixins/Helpers */ "./resources/js/web/shop/mixins/Helpers.js");
-/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @shop/config/l18n */ "./resources/js/web/shop/config/l18n.js");
+/* harmony import */ var _shop_mixins_Helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @events/mixins/Helpers */ "./resources/js/web/shop/mixins/Helpers.js");
+/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @events/config/l18n */ "./resources/js/web/shop/config/l18n.js");
 //
 //
 //
@@ -2210,8 +2210,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_feather_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-feather-icons */ "./node_modules/vue-feather-icons/dist/vue-feather-icons.es.js");
-/* harmony import */ var _shop_mixins_Helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @shop/mixins/Helpers */ "./resources/js/web/shop/mixins/Helpers.js");
-/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @shop/config/l18n */ "./resources/js/web/shop/config/l18n.js");
+/* harmony import */ var _shop_mixins_Helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @events/mixins/Helpers */ "./resources/js/web/shop/mixins/Helpers.js");
+/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @events/config/l18n */ "./resources/js/web/shop/config/l18n.js");
 //
 //
 //
@@ -2284,9 +2284,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _shop_mixins_Shop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @shop/mixins/Shop */ "./resources/js/web/shop/mixins/Shop.js");
-/* harmony import */ var _shop_mixins_Helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @shop/mixins/Helpers */ "./resources/js/web/shop/mixins/Helpers.js");
-/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @shop/config/l18n */ "./resources/js/web/shop/config/l18n.js");
+/* harmony import */ var _shop_mixins_Shop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @events/mixins/Shop */ "./resources/js/web/shop/mixins/Shop.js");
+/* harmony import */ var _shop_mixins_Helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @events/mixins/Helpers */ "./resources/js/web/shop/mixins/Helpers.js");
+/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @events/config/l18n */ "./resources/js/web/shop/config/l18n.js");
 //
 //
 //
@@ -2387,7 +2387,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @shop/config/l18n */ "./resources/js/web/shop/config/l18n.js");
+/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @events/config/l18n */ "./resources/js/web/shop/config/l18n.js");
 //
 //
 //
@@ -2467,9 +2467,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _shop_mixins_Errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @shop/mixins/Errors */ "./resources/js/web/shop/mixins/Errors.js");
-/* harmony import */ var _shop_mixins_Shop__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @shop/mixins/Shop */ "./resources/js/web/shop/mixins/Shop.js");
-/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @shop/config/l18n */ "./resources/js/web/shop/config/l18n.js");
+/* harmony import */ var _shop_mixins_Errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @events/mixins/Errors */ "./resources/js/web/shop/mixins/Errors.js");
+/* harmony import */ var _shop_mixins_Shop__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @events/mixins/Shop */ "./resources/js/web/shop/mixins/Shop.js");
+/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @events/config/l18n */ "./resources/js/web/shop/config/l18n.js");
 //
 //
 //
@@ -2636,7 +2636,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @shop/config/l18n */ "./resources/js/web/shop/config/l18n.js");
+/* harmony import */ var _shop_config_l18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @events/config/l18n */ "./resources/js/web/shop/config/l18n.js");
 //
 //
 //
@@ -70514,9 +70514,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_notification__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-notification */ "./node_modules/vue-notification/dist/index.js");
 /* harmony import */ var vue_notification__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_notification__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _shop_components_ui_LoadingIndicator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @shop/components/ui/LoadingIndicator */ "./resources/js/web/shop/components/ui/LoadingIndicator.vue");
-/* harmony import */ var _shop_config_routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @shop/config/routes */ "./resources/js/web/shop/config/routes.js");
-__webpack_require__(/*! @shop/bootstrap */ "./resources/js/web/shop/bootstrap.js"); // Vue
+/* harmony import */ var _shop_components_ui_LoadingIndicator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @events/components/ui/LoadingIndicator */ "./resources/js/web/shop/components/ui/LoadingIndicator.vue");
+/* harmony import */ var _shop_config_routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @events/config/routes */ "./resources/js/web/shop/config/routes.js");
+__webpack_require__(/*! @events/bootstrap */ "./resources/js/web/shop/bootstrap.js"); // Vue
 
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); // Axios Interceptors
@@ -70529,7 +70529,7 @@ __webpack_require__(/*! vue-axios-interceptors */ "./node_modules/vue-axios-inte
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 Vue.use(vue_axios__WEBPACK_IMPORTED_MODULE_0___default.a, axios__WEBPACK_IMPORTED_MODULE_1___default.a); // Filters
 
-__webpack_require__(/*! @shop/mixins/Filters */ "./resources/js/web/shop/mixins/Filters.js"); // Vue-Axios defaults
+__webpack_require__(/*! @events/mixins/Filters */ "./resources/js/web/shop/mixins/Filters.js"); // Vue-Axios defaults
 
 
 Vue.axios.defaults.withCredentials = true; // Vue-Notifications
@@ -70542,7 +70542,7 @@ Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]); // Loading indicato
 
 
 Vue.component('LoadingIndicator', _shop_components_ui_LoadingIndicator__WEBPACK_IMPORTED_MODULE_4__["default"]); // Store
-// import store from '@shop/config/store';
+// import store from '@events/config/store';
 // Routes
 
 
@@ -70550,15 +70550,15 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]({
   mode: 'history',
   routes: _shop_config_routes__WEBPACK_IMPORTED_MODULE_5__["default"]
 }); // App component
-// import AppComponent from '@shop/App.vue';
+// import AppComponent from '@events/App.vue';
 
-Vue.component('product-add', __webpack_require__(/*! @shop/views/shop/ProductAdd.vue */ "./resources/js/web/shop/views/shop/ProductAdd.vue")["default"]);
-Vue.component('product-view', __webpack_require__(/*! @shop/views/shop/Product.vue */ "./resources/js/web/shop/views/shop/Product.vue")["default"]);
-Vue.component('basket-preview', __webpack_require__(/*! @shop/views/shop/BasketPreview.vue */ "./resources/js/web/shop/views/shop/BasketPreview.vue")["default"]);
-Vue.component('basket-view', __webpack_require__(/*! @shop/views/shop/Basket.vue */ "./resources/js/web/shop/views/shop/Basket.vue")["default"]);
-Vue.component('basket-summary-view', __webpack_require__(/*! @shop/views/shop/BasketSummary.vue */ "./resources/js/web/shop/views/shop/BasketSummary.vue")["default"]);
-Vue.component('basket-item', __webpack_require__(/*! @shop/views/shop/BasketItem.vue */ "./resources/js/web/shop/views/shop/BasketItem.vue")["default"]);
-Vue.component('payment-view', __webpack_require__(/*! @shop/views/shop/Payment.vue */ "./resources/js/web/shop/views/shop/Payment.vue")["default"]); // Mount App
+Vue.component('product-add', __webpack_require__(/*! @events/views/shop/ProductAdd.vue */ "./resources/js/web/shop/views/shop/ProductAdd.vue")["default"]);
+Vue.component('product-view', __webpack_require__(/*! @events/views/shop/Product.vue */ "./resources/js/web/shop/views/shop/Product.vue")["default"]);
+Vue.component('basket-preview', __webpack_require__(/*! @events/views/shop/BasketPreview.vue */ "./resources/js/web/shop/views/shop/BasketPreview.vue")["default"]);
+Vue.component('basket-view', __webpack_require__(/*! @events/views/shop/Basket.vue */ "./resources/js/web/shop/views/shop/Basket.vue")["default"]);
+Vue.component('basket-summary-view', __webpack_require__(/*! @events/views/shop/BasketSummary.vue */ "./resources/js/web/shop/views/shop/BasketSummary.vue")["default"]);
+Vue.component('basket-item', __webpack_require__(/*! @events/views/shop/BasketItem.vue */ "./resources/js/web/shop/views/shop/BasketItem.vue")["default"]);
+Vue.component('payment-view', __webpack_require__(/*! @events/views/shop/Payment.vue */ "./resources/js/web/shop/views/shop/Payment.vue")["default"]); // Mount App
 
 if (document.getElementById("shop")) {
   var app = new Vue({
@@ -70783,8 +70783,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _shop_views_errors_Forbidden_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @shop/views/errors/Forbidden.vue */ "./resources/js/web/shop/views/errors/Forbidden.vue");
-/* harmony import */ var _shop_views_errors_NotFound_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @shop/views/errors/NotFound.vue */ "./resources/js/web/shop/views/errors/NotFound.vue");
+/* harmony import */ var _shop_views_errors_Forbidden_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @events/views/errors/Forbidden.vue */ "./resources/js/web/shop/views/errors/Forbidden.vue");
+/* harmony import */ var _shop_views_errors_NotFound_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @events/views/errors/NotFound.vue */ "./resources/js/web/shop/views/errors/NotFound.vue");
 
 
 var routes = [// Shop article detail page

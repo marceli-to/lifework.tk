@@ -10,8 +10,9 @@
           <h3>{{$e->category}}</h3>
           <h2><a href="javascript:;" class="js-btn-article">{{$e->title}}</a></h2>
           <div class="content-list__body is-hidden">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-            <p>Vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            @if ($e->description)
+              <p>{!! $e->description !!}</p>
+            @endif
             <div class="list">
               @if ($e->date)
                 <div class="list__item">
@@ -20,7 +21,7 @@
               @endif
               @if ($e->time)
                 <div class="list__item">
-                  Zeiten: {{$e->time}}
+                  Zeit: {{$e->time}}
                 </div>
               @endif
               @if ($e->location)
@@ -35,12 +36,20 @@
               @endif
               @if ($e->cost)
                 <div class="list__item">
-                  Kosten: CHF 300
+                  Kosten: {{$e->cost}}
                 </div>
               @endif
-              <div class="list__item list__item--button">
-                <a href="javascript:;" class="btn-primary js-btn-form">buchen</a>
-              </div>
+              @if ($e->state != 'Ausgebucht')
+                <div class="list__item list__item--button">
+                  @if ($e->hasForm)
+                    <a href="javascript:;" class="btn-primary js-btn-form">buchen</a>
+                  @else
+                    <a href="mailto:{{$e->email}}?subject=Anfrage%20Termin%20«{{$e->title}}» – lifework.ch" class="btn-primary">kontakt</a>
+                  @endif
+                </div>
+              @else
+                <div class="list__item list__item--button">Dieser Kurs ist bereits ausgebucht.</div>
+              @endif
             </div>
           </div>
         </div>

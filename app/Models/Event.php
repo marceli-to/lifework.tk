@@ -7,6 +7,7 @@ class Event extends Base
 {
 	protected $fillable = [
     'title',
+    'description',
     'host',
     'host_title',
     'category',
@@ -14,6 +15,10 @@ class Event extends Base
     'date',
     'time',
     'duration',
-    'location'
+    'cost',
+    'location',
+    'hasForm',
+    'email',
+    'state',
   ];
 }
