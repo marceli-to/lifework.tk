@@ -41,10 +41,10 @@ article.content-text {
     h3 {
       @include font-size($fs-md);
       margin-bottom: $space-sm;
-      margin-top:$space-lg;
+      margin-top: $space-lg;
 
       @include bp-md() {
-        margin-top:$space-xl;
+        margin-top: $space-xl;
       }
 
       &:first-of-type {

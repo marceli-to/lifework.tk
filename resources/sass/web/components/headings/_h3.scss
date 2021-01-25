@@ -6,4 +6,11 @@
 
 h3 {
   @include font-size($fs-sm);
+
+  &.is-service {
+    margin-top: $space-lg;
+    @include bp-md() {
+      margin-top: $space-xl;
+    }
+  }
 }
