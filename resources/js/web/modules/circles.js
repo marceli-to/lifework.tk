@@ -55,7 +55,7 @@ var Circles = (function() {
     var pos = _getMousePosition(x,y);
     switch(pos) {
       case 'tl':
-        _animate(3);
+        _animate(1);
       break;
       case 'tr':
         _animate(2);
@@ -64,10 +64,10 @@ var Circles = (function() {
         _animate(4);
       break;
       case 'br':
-        _animate(1);
+        _animate(3);
       break;
     }
-  }, 0);
+  }, 10);
 
   var _animate = function(figure) {
     $('[data-figure]').removeClass(classes.visible);

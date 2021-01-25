@@ -2,7 +2,7 @@
 @section('seo_title', 'Allgemeine Geschäftsbedingungen')
 @section('seo_description', '')
 @section('content')
-<section class="site__content theme-light">
+<section class="site__content theme-dark">
   <article class="content-text content-text--toc">
     <div class="content-text__inner">
       <h2 class="underline">

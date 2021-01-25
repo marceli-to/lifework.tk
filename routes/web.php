@@ -22,7 +22,7 @@ Route::get('/themen', 'PageController@topics')->name('page.topics');
 Route::get('/veranstaltungen', 'PageController@events')->name('page.events');
 Route::get('/ueber-uns', 'PageController@about')->name('page.about');
 Route::get('/team', 'PageController@team')->name('page.team');
-Route::get('/netzwerkpartner', 'PageController@network')->name('page.network');
+Route::get('/partner', 'PageController@partner')->name('page.partner');
 Route::get('/blog', 'PageController@blog')->name('page.blog');
 Route::get('/agb', 'PageController@toc')->name('page.toc');
 Route::get('/kontakt', 'PageController@contact')->name('page.contact');

@@ -37,7 +37,22 @@ article.content-text {
   }
 
   &.content-text--toc {
-    h3, h4, p {
+
+    h3 {
+      @include font-size($fs-md);
+      margin-bottom: $space-sm;
+      margin-top:$space-lg;
+
+      @include bp-md() {
+        margin-top:$space-xl;
+      }
+
+      &:first-of-type {
+        margin-top: 0 !important;
+      }
+    }
+
+    h4, p {
       @include font-size($fs-sm);
       margin-bottom: $space-sm;
     }

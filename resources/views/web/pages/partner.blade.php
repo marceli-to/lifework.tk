@@ -8,7 +8,8 @@
       <h2>Horst Henrichs:</h2>
       <a href="javascript:;" class="js-btn-article">«Wer sich nicht in Gefahr begibt, der kommt darin um»</a>
       <div class="content-list__body is-hidden">
-        <p>Das Leben ist ein Wagnis zwischen Wachstum und Sicherheit.<br>Hierzu benötigt es Mut, Risikobereitschaft und Selbstermächtigung.<br>Am Ende wird alles gut, und wenn es nicht gut wird, ist es noch nicht das Ende.<br>Meine Arbeit als Coach, Supervisor und Psychotherapeut leitet sich aus einem ganzheitlichen Verständnis existenziellen Daseins ab.<br>Im Mittelpunkt meiner lösungsorientierten Vorgehensweise steht der Mensch in Beziehung zu seiner Umwelt.</p>    
+        <p>Das Leben ist ein Wagnis zwischen Wachstum und Sicherheit. Hierzu benötigt es Mut, Risikobereitschaft und Selbstermächtigung. Am Ende wird alles gut, und wenn es nicht gut wird, ist es noch nicht das Ende.</p>
+        <p>Meine Arbeit als Coach, Supervisor und Psychotherapeut leitet sich aus einem ganzheitlichen Verständnis existenziellen Daseins ab. Im Mittelpunkt meiner lösungsorientierten Vorgehensweise steht der Mensch in Beziehung zu seiner Umwelt.</p>    
       </div>
     </div>
     <div class="content-list__media is-hidden">

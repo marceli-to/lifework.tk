@@ -24,6 +24,11 @@
                   Zeit: {{$e->time}}
                 </div>
               @endif
+              @if ($e->target_group)
+                <div class="list__item">
+                  Zielgruppe: {{$e->target_group}}
+                </div>
+              @endif
               @if ($e->location)
                 <div class="list__item">
                   Ort: {{$e->location}}

@@ -9,7 +9,7 @@
       <h2>Unser Interesse:</h2>
       <a href="javascript:;" class="js-btn-article">Mutig Fragen stellen und beherzt Antworten suchen</a>
       <div class="content-list__body is-hidden">
-        <p>Die Essenz unseres langjährigen Wirkens in Organisationen und Teams teilen wir mit den Erfahrungen unserer Netzwerkpartner*innen ((Link)) und mit Gleichgesinnten. Gemeinsam entwickeln wir passende Angebote für Bildungs-, Coaching- und Beratungssettings. Unsere Rolle sehen wir als Gastgeberinnen, die Räume schaffen und halten, in denen konstruktiv gearbeitet werden kann. Wir stossen Gespräche an, stellen unser Know-How zur Verfügung, formulieren die bedeutsamen Fragen und begleiten Schritt für Schritt, konkret und praktikabel, den gemeinsamen Prozess.</p>
+        <p>Die Essenz unseres langjährigen Wirkens in Organisationen und Teams teilen wir mit den Erfahrungen unserer Netzwerkpartner*innen und mit Gleichgesinnten. Gemeinsam entwickeln wir passende Angebote für Bildungs-, Coaching- und Beratungssettings. Unsere Rolle sehen wir als Gastgeberinnen, die Räume schaffen und halten, in denen konstruktiv gearbeitet werden kann. Wir stossen Gespräche an, stellen unser Know-How zur Verfügung, formulieren die bedeutsamen Fragen und begleiten Schritt für Schritt, konkret und praktikabel, den gemeinsamen Prozess.</p>
       </div>
     </div>
   </article>
