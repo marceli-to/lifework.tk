@@ -9,20 +9,20 @@
       <h2>Beratung:</h2>
       <a href="javascript:;" class="js-btn-article">Wie Beruf und Familie gelingt und familienergänzende Betreuung zukunftsfähig ist</a>
       <div class="content-list__body is-hidden">
-        <p>Wir unterstützen Unternehmen und Organisationen lösungsorientiert und alltagsnah, eine familienfreundliche Kultur im Betrieb sowie attraktive Angebote der Bildung und Betreuung für Kinder zu etablieren.</p>
+        <p>Lösungsorientiert und alltagsnah unterstützen wir Unternehmen und Organisationen, eine familienfreundliche Kultur im Betrieb sowie attraktive Angebote der familienergänzenden Betreuung zu etablieren.</p>
         <h3 class="is-service">Für HR-Verantwortliche</h3>
         <ul>
-          <li>Beratung bei Konzepten und Projekten zur Vereinbarkeit von Beruf und Familie sowie der Kinder- und Angehörigenbetreuung </li>
+          <li>Konzepte und Projekte zur Vereinbarkeit von Beruf und Familie sowie der Kinder- und Angehörigenbetreuung </li>
         </ul>
         <h3 class="is-service">Für Organisationen und Verantwortliche der öffentlichen Hand</h3>
         <ul>
           <li>Projektberatung bei der Angebots- und Qualitätsentwicklung von familienergänzender Kinderbetreuung</li>
-          <li>Kosten- und Angebotsanalysen im Bereich der familienergänzenden Kinderbetreuung</li>
+          <li>Kosten- und Angebotsanalysen</li>
           <li>Fachinputs und Moderation von Workshops</li>
         </ul>
         <h3 class="is-service">Für Trägerschaften und Einrichtungen der familienergänzenden Betreuung</h3>
         <ul>
-          <li>Beratung, Workshops und Coaching mit Schwerpunkt frühkindliche Bildungsarbeit, Organisations- und Qualitätsentwicklung</li>
+          <li>Workshops und Coaching mit Schwerpunkt frühkindliche Bildungsarbeit, Organisations- und Qualitätsentwicklung</li>
           <li>Projektberatung und Konzepte</li>
         </ul>
       </div>
@@ -60,7 +60,7 @@
       <h2>Coaching:</h2>
       <a href="javascript:;" class="js-btn-article">Beruflich und persönlich passend</a>
       <div class="content-list__body is-hidden">
-        <p>Im Coaching begleiten wir Menschen oder Teams in Einrichtungen der familienergänzenden Betreuung in ihrem Entwicklungsprozess. Dabei liegt der Fokus auf den Voraussetzungen und Bedürfnissen, Mitteln und Möglichkeiten, um zu einem gelingenden Wirken zu finden &ndash; beruflich und persönlich.</p>
+        <p>Im Coaching begleiten wir Menschen oder Teams in ihrem Entwicklungsprozess. Dabei liegt der Fokus auf den Voraussetzungen und Bedürfnissen, Mitteln und Möglichkeiten, um zu einem gelingenden Wirken zu finden &ndash; beruflich und persönlich.</p>
         <h3 class="is-service">Standortbestimmung bei Berufs- und Lebensübergängen</h3>
         <ul>
           <li>Schwangerschaft und Beruf</li>

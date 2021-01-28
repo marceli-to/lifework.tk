@@ -16,7 +16,7 @@
       <figure>
         <img src="/assets/img/dummy.png" height="359" width="270" alt="Horst Henrichs">
         <figcaption>
-          <p>Horst Henrichs<br><a href="/assets/downloads/Profil_Horst_Henrichs.pdf" target="_blank"  title="Profil Horst Henrichs">Profil</a></p>
+          <p>Horst Henrichs<br>Coach, Supervisor und Weiterbildungsleiter<br><a href="/assets/downloads/Profil_Horst_Henrichs.pdf" target="_blank"  title="Profil Horst Henrichs">Profil</a></p>
         </figcaption>
       </figure>
     </div>

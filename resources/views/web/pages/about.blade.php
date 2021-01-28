@@ -17,7 +17,7 @@
     <div class="content-list__inner">
       <a href="javascript:;" class="btn-arrow js-btn-article"></a>
       <h2>Unser Know-How:</h2>
-      <a href="javascript:;" class="js-btn-article">Geprägt von der Vereinbarkeit Beruf — Familie</a>
+      <a href="javascript:;" class="js-btn-article">Geprägt von der Vereinbarkeit Beruf — Familie — familienergänzende Betreuung</a>
       <div class="content-list__body is-hidden">
         <p>Was Theres Hofmann und Kathrin Toberer verbindet, ist die 20-jährige Aufbau- und Führungstätigkeit in ihrer ehemaligen Firma für Dienstleistungen zur Vereinbarkeit von Beruf und Familie. Rund 60 schweizweit und international tätige Unternehmen im Dienstleistungssektor gehörten zu den Kund*innen des Familienservice. Das Angebot umfasste die Beratung berufstätiger Eltern und Familienangehöriger, den Aufbau und die Führung zahlreicher Kindertagesstätten sowie die Qualitätsentwicklung in der frühkindlichen Bildung. Familie und Beruf sind komplexer geworden: Nicht nur die Ansprüche der Arbeitswelt an ihre Mitarbeitenden veränderten sich im Lauf der letzten Jahre, auch die familiären Lebenswelten sind vielfältiger und diverser geworden.</p>
       </div>
