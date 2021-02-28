@@ -2,18 +2,16 @@
 namespace App\Http\Controllers;
 use App\Http\Controllers\BaseController;
 use App\Models\Post;
-use App\Models\Event;
 use Illuminate\Http\Request;
 
 class PageController extends BaseController
 {
   protected $viewPath = 'web.pages.';
 
-  public function __construct(Post $post, Event $event)
+  public function __construct(Post $post)
   {
     parent::__construct();
     $this->post = $post;
-    $this->event = $event;
   }
   
   /**
@@ -41,16 +39,6 @@ class PageController extends BaseController
   public function topics()
   {
     return view($this->viewPath . 'topics', ['title' => 'Themen']);
-  }
-
-  /**
-   * Veranstaltungen
-   */
-
-  public function events()
-  {
-    $events = $this->event->get();
-    return view($this->viewPath . 'events', ['title' => 'Veranstaltungen', 'events' => $events]);
   }
 
   /**

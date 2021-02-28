@@ -43,6 +43,10 @@
   </table>
 </div>
 <p class="signature">
-  Freundliche Grüsse<br>lifework tk
+  Freundliche Grüsse<br>
+  lifework tk ag<br>
+  Untere Vogelsangstrasse 11<br>
+  8400 Winterthur<br>
+  mail@lifework.ch
 </p>
 @endcomponent

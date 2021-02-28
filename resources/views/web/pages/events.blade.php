@@ -14,6 +14,11 @@
               <p>{!! $e->description !!}</p>
             @endif
             <div class="list">
+              @if ($e->target_group)
+                <div class="list__item">
+                  Zielgruppe: {{$e->target_group}}
+                </div>
+              @endif
               @if ($e->date)
                 <div class="list__item">
                   Datum: {{$e->date}}
@@ -22,11 +27,6 @@
               @if ($e->time)
                 <div class="list__item">
                   Zeit: {{$e->time}}
-                </div>
-              @endif
-              @if ($e->target_group)
-                <div class="list__item">
-                  Zielgruppe: {{$e->target_group}}
                 </div>
               @endif
               @if ($e->location)
@@ -44,7 +44,7 @@
                   Kosten: {{$e->cost}}
                 </div>
               @endif
-              @if ($e->state != 'Ausgebucht')
+              @if ($e->state != 'Ausgebucht' && $e->bookable)
                 <div class="list__item list__item--button">
                   @if ($e->hasForm)
                     <a href="javascript:;" class="btn-primary js-btn-form">buchen</a>
@@ -53,7 +53,10 @@
                   @endif
                 </div>
               @else
-                <div class="list__item list__item--button">Dieser Kurs ist bereits ausgebucht.</div>
+                <div class="list__item list__item--button">
+                  @if ($e->state == 'Ausgebucht') Dieser Kurs ist bereits ausgebucht. @endif
+                  @if (!$e->bookable) Die Anmeldefrist ist leider bereits vorbei. @endif
+                </div>
               @endif
             </div>
           </div>

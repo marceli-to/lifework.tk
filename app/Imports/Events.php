@@ -13,20 +13,26 @@ class Events implements ToModel
   public function model(array $row)
   {
     return new Event([
-      'title'         => trim($row[0]),
-      'description'   => trim(nl2br($row[1])),
-      'host'          => trim($row[2]),
-      'host_title'    => trim($row[3]),
-      'category'      => trim($row[4]),
-      'target_group'  => trim($row[5]),
-      'date'          => trim($row[6]),
-      'time'          => trim(str_replace(' - ', ' – ', $row[7])),
-      'duration'      => trim($row[8]),
-      'location'      => trim($row[9]),
-      'cost'          => trim($row[10]),
-      'hasForm'       => trim($row[11]),
-      'email'         => trim($row[12]),
-      'state'         => trim($row[13]),
+      'category'         => trim($row[0]),
+      'title'            => trim($row[1]),
+      'description'      => trim(nl2br($row[2])),
+      'target_group'     => trim($row[3]),
+      'date'             => trim($row[4]),
+      'time'             => trim(str_replace(' - ', ' – ', $row[5])),
+      'location'         => trim($row[6]),
+      'host'             => trim($row[7]),
+      'host_title'       => trim($row[8]),
+      'cost'             => trim($row[9]),
+      'dateDeadline'     => trim($row[10]) ? \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row[10]) : null,
+      'hasForm'          => trim($row[11]),
+      'email'            => trim($row[12]),
+      'state'            => trim($row[13]),
+      'dateShowUntil'    => trim($row[14]) ? \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row[14]) : null,
+      'isBildungskrippe' => trim($row[15]) ? trim($row[15]) : null,
+      'isKita'           => trim($row[16]) ? trim($row[16]) : null,
+      'isLeadership'     => trim($row[17]) ? trim($row[17]) : null,
+      'isCompany'        => trim($row[18]) ? trim($row[18]) : null,
+      'isOther'          => trim($row[19]) ? trim($row[19]) : null
     ]);
   }
 }
