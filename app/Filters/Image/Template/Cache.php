@@ -40,10 +40,6 @@ class Cache implements FilterInterface
     }
     else
     {
-      // return
-      //   $image->resize($this->maxWidth, $this->maxHeight, function ($constraint) {
-      //     $constraint->upsize();
-      // });
       return
         $image->fit($this->maxWidth, $this->maxHeight, function ($constraint) {
           $constraint->upsize();

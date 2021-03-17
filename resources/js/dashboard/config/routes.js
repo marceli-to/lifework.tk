@@ -9,6 +9,10 @@ import PostIndex from '@/views/post/Index.vue';
 import PostCreate from '@/views/post/Create.vue';
 import PostEdit from '@/views/post/Edit.vue';
 
+// Testimonials
+import TestimonialIndex from '@/views/testimonial/Index.vue';
+import TestimonialCreate from '@/views/testimonial/Create.vue';
+import TestimonialEdit from '@/views/testimonial/Edit.vue';
 
 const routes = [
 
@@ -34,6 +38,23 @@ const routes = [
     name: 'post-edit',
     path: '/administration/post/edit/:id',
     component: PostEdit,
+  },
+
+  // Testimonials
+  {
+    name: 'testimonials',
+    path: '/administration/testimonials',
+    component: TestimonialIndex,
+  },
+  {
+    name: 'testimonial-create',
+    path: '/administration/testimonial/create',
+    component: TestimonialCreate,
+  },
+  {
+    name: 'testimonial-edit',
+    path: '/administration/testimonial/edit/:id',
+    component: TestimonialEdit,
   },
 
   // Authorization

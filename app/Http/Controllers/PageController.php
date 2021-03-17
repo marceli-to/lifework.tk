@@ -33,6 +33,15 @@ class PageController extends BaseController
   }
 
   /**
+   * Bildungskrippen
+   */
+
+  public function nursery()
+  {
+    return view($this->viewPath . 'nursery', ['title' => 'Bildungskrippen']);
+  }
+
+  /**
    * Themen
    */
 
@@ -63,9 +72,9 @@ class PageController extends BaseController
    * Netzwerk
    */
 
-  public function partner()
+  public function network()
   {
-    return view($this->viewPath . 'partner', ['title' => 'Partner']);
+    return view($this->viewPath . 'network', ['title' => 'Netzwerk']);
   }
 
   /**

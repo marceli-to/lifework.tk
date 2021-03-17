@@ -26,7 +26,12 @@
     <ul>
       <li>
         <router-link :to="{name: 'posts'}">
-          <span>Posts</span>
+          <span>Blog</span>
+        </router-link>
+      </li>
+      <li>
+        <router-link :to="{name: 'testimonials'}">
+          <span>Stimmen</span>
         </router-link>
       </li>
     </ul>

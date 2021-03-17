@@ -18,6 +18,10 @@ section.theme-light {
   }
 }
 
+section.theme-medium {
+  background-color: $color-lemon;
+}
+
 section.theme-dark {
   background-color: $color-ocean;
 
@@ -27,15 +31,9 @@ section.theme-dark {
     }
   }
 
-  // a {
-  //   @extend %underline-dark;
-  //   @extend %underline-anchor-dark;
-  // }
-
   a:not(.btn-arrow):not(.btn-primary) {
     @extend %underline-dark;
     @extend %underline-anchor-dark;
     color: $color-black;
   }
-
 }

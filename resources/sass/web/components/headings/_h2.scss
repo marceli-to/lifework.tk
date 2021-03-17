@@ -6,4 +6,24 @@
 
 h2 {
   margin-bottom: $space-tiny;
+
+  &.has-logo {
+    display: flex;
+    svg {
+      display: block;
+      height: auto;
+      margin-left: $space-sm;
+      max-width: 160px;
+      width: 100%;
+
+      @include bp-md() {
+        max-width: 200px;
+      }
+
+      @include bp-lg() {
+        margin-left: $space-lg;
+        max-width: 240px;
+      }
+    }
+  }
 }

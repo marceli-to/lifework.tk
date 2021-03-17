@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import PostForm from '@/views/Post/form.vue';
+import PostForm from '@/views/post/form.vue';
 export default {
   components: {
     PostForm

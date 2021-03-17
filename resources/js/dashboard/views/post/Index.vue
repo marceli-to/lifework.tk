@@ -3,7 +3,7 @@
   <loading-indicator v-if="isLoading"></loading-indicator>
   <div :class="isFetched ? 'is-loaded' : 'is-loading'">
     <header class="content-header">
-      <h1>Blog-Posts</h1>
+      <h1>Blog</h1>
       <router-link :to="{ name: 'post-create' }" class="feather-icon feather-icon--prepend">
         <plus-icon size="16"></plus-icon>
         <span>Hinzufügen</span>
@@ -16,7 +16,7 @@
         :key="p.id"
       >
         <div class="listing__item-body">
-          {{ dateFormat(p.date, 'DD.MM.YYYY') }}<separator />{{p.title }}
+          {{ p.date }}<separator />{{ p.title }}
         </div>
         <list-actions 
           :id="p.id" 

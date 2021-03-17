@@ -5,8 +5,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Base
 {
-  protected $dates = ['date'];
-
 	protected $fillable = [
     'date',
     'title',
@@ -14,23 +12,13 @@ class Post extends Base
 		'publish',
   ];
 
-  /**
-   * Get the full date
-   *
-   * @return string
-   */
-  public function getDateStrAttribute()
-  {
-    return strftime('%d. %B %Y', strtotime($this->date->format('d.m.Y')));
-  }
+	public function images()
+	{
+		return $this->hasMany('App\Models\PostImage', 'post_id', 'id')->orderBy('order');
+	}
 
-  /**
-   * Get the full date with weekday
-   *
-   * @return string
-   */
-  public function getDateStrFullAttribute()
-  {
-    return strftime('%A,  %d. %B %Y', strtotime($this->date->format('d.m.Y')));
-  }
+	public function publishedImages()
+	{
+		return $this->hasMany('App\Models\PostImage', 'post_id', 'id')->where('publish', '=', 1)->orderBy('order');
+	}
 }

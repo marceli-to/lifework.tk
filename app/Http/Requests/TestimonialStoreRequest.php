@@ -2,7 +2,7 @@
 namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 
-class PostStoreRequest extends FormRequest
+class TestimonialStoreRequest extends FormRequest
 {
   /**
    * Determine if the user is authorized to make this request.
@@ -23,6 +23,7 @@ class PostStoreRequest extends FormRequest
   {
     return [
       'title' => 'required',
+      'text' => 'required',
     ];
   }
 
@@ -37,6 +38,10 @@ class PostStoreRequest extends FormRequest
       'title.required' => [
         'field' => 'title',
         'error' => 'Titel wird benötigt!'
+      ],
+      'text.required' => [
+        'field' => 'text',
+        'error' => 'Text wird benötigt!'
       ],
     ];
   }
