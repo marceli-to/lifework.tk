@@ -19,13 +19,13 @@
         <a href="{{ route('page.team') }}" class="{{ request()->routeIs('page.team') ? 'is-active' : '' }}">Team</a>
       </li>
       <li>
-        <a href="{{ route('page.network.people') }}" class="{{ request()->routeIs('page.network*') ? 'is-active' : '' }}">Netzwerk</a>
+        <a href="{{ route('page.network.members') }}" class="{{ request()->routeIs('page.network*') ? 'is-active' : '' }}">Netzwerk</a>
         <ul style="{{ request()->routeIs('page.network*') ? 'display: block;' : 'display: none;' }}">
           <li>
-            <a href="{{ route('page.network') }}" class="{{ request()->routeIs('page.network.people') ? 'is-active' : '' }}">Personen</a>
+            <a href="{{ route('page.network.members') }}" class="{{ request()->routeIs('page.network.members') ? 'is-active' : '' }}">Personen</a>
           </li>
           <li>
-            <a href="{{ route('page.network') }}" class="{{ request()->routeIs('page.network.organisations') ? 'is-active' : '' }}">Organisationen</a>
+            <a href="{{ route('page.network.organisations') }}" class="{{ request()->routeIs('page.network.organisations') ? 'is-active' : '' }}">Organisationen</a>
           </li>
         </ul>
       </li>

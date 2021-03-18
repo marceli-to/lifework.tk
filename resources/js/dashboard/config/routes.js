@@ -14,6 +14,11 @@ import TestimonialIndex from '@/views/testimonial/Index.vue';
 import TestimonialCreate from '@/views/testimonial/Create.vue';
 import TestimonialEdit from '@/views/testimonial/Edit.vue';
 
+// Organisations
+import OrganisationIndex from '@/views/organisation/Index.vue';
+import OrganisationCreate from '@/views/organisation/Create.vue';
+import OrganisationEdit from '@/views/organisation/Edit.vue';
+
 // Members
 import MemberIndex from '@/views/member/Index.vue';
 import MemberCreate from '@/views/member/Create.vue';
@@ -60,6 +65,23 @@ const routes = [
     name: 'testimonial-edit',
     path: '/administration/testimonial/edit/:id',
     component: TestimonialEdit,
+  },
+
+  // Organisations
+  {
+    name: 'organisations',
+    path: '/administration/organisations',
+    component: OrganisationIndex,
+  },
+  {
+    name: 'organisation-create',
+    path: '/administration/organisation/create',
+    component: OrganisationCreate,
+  },
+  {
+    name: 'organisation-edit',
+    path: '/administration/organisation/edit/:id',
+    component: OrganisationEdit,
   },
 
   // Members

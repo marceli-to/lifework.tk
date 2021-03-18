@@ -1,5 +1,5 @@
 @extends('web.layout.app')
-@section('seo_title', 'Bildungskrippe')
+@section('seo_title', 'Bildungskrippen')
 @section('content')
 <section class="site__content theme-light">
   <article class="content-list">

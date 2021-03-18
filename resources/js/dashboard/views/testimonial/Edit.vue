@@ -1,6 +1,6 @@
 <template>
   <div>
-    <testimonial-form type="create"></testimonial-form>
+    <testimonial-form type="edit"></testimonial-form>
   </div>
 </template>
 <script>

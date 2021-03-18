@@ -46,6 +46,15 @@ Route::middleware('auth:sanctum')->group(function() {
   Route::post('testimonials/order', 'Api\TestimonialController@order');
   Route::delete('testimonial/{testimonial}', 'Api\TestimonialController@destroy');
 
+  // Organisation
+  Route::get('organisations', 'Api\OrganisationController@get');
+  Route::get('organisation/{organisation}', 'Api\OrganisationController@find');
+  Route::post('organisation', 'Api\OrganisationController@store');
+  Route::put('organisation/{organisation}', 'Api\OrganisationController@update');
+  Route::get('organisation/state/{organisation}', 'Api\OrganisationController@toggle');
+  Route::post('organisations/order', 'Api\OrganisationController@order');
+  Route::delete('organisation/{organisation}', 'Api\OrganisationController@destroy');
+
   // Member categories
   Route::get('member/categories', 'Api\MemberCategoryController@get');
   Route::get('member/category/{member}', 'Api\MemberCategoryController@find');

@@ -42,49 +42,12 @@ class PageController extends BaseController
   }
 
   /**
-   * Themen
-   */
-
-  public function topics()
-  {
-    return view($this->viewPath . 'topics', ['title' => 'Themen']);
-  }
-
-  /**
    * Über uns
    */
 
   public function about()
   {
     return view($this->viewPath . 'about', ['title' => 'Über uns']);
-  }
-
-  /**
-   * Team
-   */
-
-  public function team()
-  {
-    return view($this->viewPath . 'team', ['title' => 'Team']);
-  }
-
-  /**
-   * Netzwerk
-   */
-
-  public function network()
-  {
-    return view($this->viewPath . 'network', ['title' => 'Netzwerk']);
-  }
-
-  /**
-   * Blog
-   */
-
-  public function blog()
-  {
-    $posts = $this->post->published()->orderBy('date', 'DESC')->get();
-    return view($this->viewPath . 'blog', ['title' => 'Blog', 'posts' => $posts]);
   }
 
   /**

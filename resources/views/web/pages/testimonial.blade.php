@@ -7,9 +7,11 @@
       <article class="content-list content-list--testimonial">
         <div class="content-list__inner">
           <h2>{{ $testimonial->title }}</h2>
-          <div class="content-list__body">
-            {!! $testimonial->text !!}
-          </div>
+          @if ($testimonial->text)
+            <div class="content-list__body">
+              {!! $testimonial->text !!}
+            </div>
+          @endif
         </div>
       </article>
     @endforeach

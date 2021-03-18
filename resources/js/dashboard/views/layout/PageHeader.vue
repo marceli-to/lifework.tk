@@ -39,6 +39,11 @@
           <span>Stimmen</span>
         </router-link>
       </li>
+      <li>
+        <router-link :to="{name: 'organisations'}">
+          <span>Organisationen</span>
+        </router-link>
+      </li>
     </ul>
   </nav>
 </div>
