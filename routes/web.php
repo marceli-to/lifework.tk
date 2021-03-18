@@ -19,7 +19,7 @@ Route::get('/angebot', 'PageController@services')->name('page.services');
 Route::get('/bildungskrippen', 'PageController@nursery')->name('page.nursery');
 Route::get('/themen', 'PageController@topics')->name('page.topics');
 Route::get('/ueber-uns', 'PageController@about')->name('page.about');
-Route::get('/team', 'PageController@team')->name('page.team');
+Route::get('/team', 'TeamController@index')->name('page.team');
 Route::get('/netzwerk', 'PageController@network')->name('page.network');
 Route::get('/netzwerk/personen', 'PageController@people')->name('page.network.people');
 Route::get('/netzwerk/organisationen', 'PageController@organisations')->name('page.network.organisations');

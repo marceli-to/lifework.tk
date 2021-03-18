@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="listing__item-action">
     <div v-if="$props.hasEdit">
       <a
         href="javascript:;"
@@ -52,7 +52,7 @@ export default {
   methods: {
 
     destroy(file, $event) {
-      this.$parent.destroy(file.name,$event);
+      this.$parent.destroyFile(file.name,$event);
     },
 
     showEdit(file) {

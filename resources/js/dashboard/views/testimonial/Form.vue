@@ -136,7 +136,7 @@ export default {
       this.isLoading = true;
       this.axios.post('/api/testimonial', this.testimonial).then(response => {
         this.$router.push({ name: "testimonials" });
-        this.$notify({ type: "success", text: "Artikel erfasst!" });
+        this.$notify({ type: "success", text: "Daten erfasst!" });
         this.isLoading = false;
       });
     },

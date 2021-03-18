@@ -46,6 +46,34 @@ Route::middleware('auth:sanctum')->group(function() {
   Route::post('testimonials/order', 'Api\TestimonialController@order');
   Route::delete('testimonial/{testimonial}', 'Api\TestimonialController@destroy');
 
+  // Member categories
+  Route::get('member/categories', 'Api\MemberCategoryController@get');
+  Route::get('member/category/{member}', 'Api\MemberCategoryController@find');
+
+  // Member images
+  Route::get('member/images/{member}', 'Api\MemberImageController@get');
+  Route::get('member/image/state/{memberImage}', 'Api\MemberImageController@toggle');
+  Route::put('member/image/{memberImage}', 'Api\MemberImageController@coords');
+  Route::post('member/image', 'Api\MemberImageController@store');
+  Route::post('member/image/order', 'Api\MemberImageController@order');
+  Route::delete('member/image/{memberImage}', 'Api\MemberImageController@destroy');
+
+  // Member files
+  Route::get('member/files/{member}', 'Api\MemberFileController@get');
+  Route::get('member/file/state/{memberFile}', 'Api\MemberFileController@toggle');
+  Route::put('member/file/{memberFile}', 'Api\MemberFileController@coords');
+  Route::post('member/file', 'Api\MemberFileController@store');
+  Route::post('member/file/order', 'Api\MemberFileController@order');
+  Route::delete('member/file/{memberFile}', 'Api\MemberFileController@destroy');
+
+  // Member
+  Route::get('member', 'Api\MemberController@get');
+  Route::get('member/{member}', 'Api\MemberController@find');
+  Route::post('member', 'Api\MemberController@store');
+  Route::put('member/{member}', 'Api\MemberController@update');
+  Route::get('member/state/{member}', 'Api\MemberController@toggle');
+  Route::delete('member/{member}', 'Api\MemberController@destroy');
+
   // Upload
   Route::post('image/upload','Api\UploadController@image');
   Route::post('file/upload','Api\UploadController@file');

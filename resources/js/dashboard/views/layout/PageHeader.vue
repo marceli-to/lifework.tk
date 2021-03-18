@@ -30,6 +30,11 @@
         </router-link>
       </li>
       <li>
+        <router-link :to="{name: 'members'}">
+          <span>Personen</span>
+        </router-link>
+      </li>
+      <li>
         <router-link :to="{name: 'testimonials'}">
           <span>Stimmen</span>
         </router-link>

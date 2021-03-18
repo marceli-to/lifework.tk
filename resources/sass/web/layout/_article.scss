@@ -135,26 +135,34 @@ article.content-list {
 article.content-list--team {
  
   .content-list__media {
-    padding-right: $space-sm;
     
     @include bp-md() {
-      padding-right: $space-lg;
+      padding-left: $space-lg;
     }
 
     figure {
       display: flex;
+      justify-content: space-between;
 
       img {
         @extend %is-responsive;
         max-width: 120px;
         
-        @include bp-md() {
-          max-width: 240px;
+        @include bp-sm() {
+          max-width: 33.3333%;
+        }
+      }
+
+      &.is-intro {
+        justify-content: flex-end;
+        img {
+          max-width: 50% !important;
         }
       }
 
       figcaption {
         padding-left: $space-sm;
+        padding-right: $space-sm;
         -ms-word-break: normal;
         word-break: normal;
         word-break: normal;

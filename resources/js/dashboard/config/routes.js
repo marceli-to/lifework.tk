@@ -14,6 +14,11 @@ import TestimonialIndex from '@/views/testimonial/Index.vue';
 import TestimonialCreate from '@/views/testimonial/Create.vue';
 import TestimonialEdit from '@/views/testimonial/Edit.vue';
 
+// Members
+import MemberIndex from '@/views/member/Index.vue';
+import MemberCreate from '@/views/member/Create.vue';
+import MemberEdit from '@/views/member/Edit.vue';
+
 const routes = [
 
   // Home
@@ -55,6 +60,23 @@ const routes = [
     name: 'testimonial-edit',
     path: '/administration/testimonial/edit/:id',
     component: TestimonialEdit,
+  },
+
+  // Members
+  {
+    name: 'members',
+    path: '/administration/memberss',
+    component: MemberIndex,
+  },
+  {
+    name: 'member-create',
+    path: '/administration/members/create',
+    component: MemberCreate,
+  },
+  {
+    name: 'member-edit',
+    path: '/administration/members/edit/:id',
+    component: MemberEdit,
   },
 
   // Authorization
