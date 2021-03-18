@@ -14,8 +14,65 @@
   top: 0;
   width: 100%;
   z-index: -1;
+
+  // Variant 2
+  &.is-flip {
+    z-index: 1;
+    &.is-flipped {
+      .circle-flip__body {
+        transform: rotateY(-180deg);
+      }
+    }
+  }
 }
 
+// Variant 2
+figure.circle-flip {
+  display: block;
+  height: auto;
+  max-width: 80%;
+  opacity: 1;
+  position: relative;
+  transition: opacity 0 ease-in;
+  width: 100%;
+  perspective: 1000px;
+
+  @include bp-sm() {
+    max-width: 50%;
+  }
+
+  .circle-flip__body {
+    height: 0;
+    overflow: hidden;
+    padding-top: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .2s ease-in;
+  }
+
+  .circle-flip-front,
+  .circle-flip-back {
+    backface-visibility: hidden;
+  }
+
+  .circle-flip-back {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transform: rotateY(-180deg);
+  }
+
+  svg {
+    display: block;
+    height: auto;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+// Variant 1
 figure.circle {
   display: block;
   height: auto;

@@ -6,6 +6,7 @@ var Circles = (function() {
 	var selectors = {
     html: 'html',
     body: 'body',
+    flip: '.js-flip',
   };
 
   // Classes
@@ -40,8 +41,14 @@ var Circles = (function() {
 
   // Events
   var _bind = function() {
+
     $(selectors.body).mousemove(function(e){
       _initAnimation(e.pageX, e.pageY);
+    });
+
+    // Variant 2
+    $(selectors.body).mousemove(function(e){
+      _initFlip(e.pageX, e.pageY);
     });
 
     // $(selectors.body).click(function(){
@@ -50,6 +57,30 @@ var Circles = (function() {
     //   }
     // });
   };
+
+  // Variant 2
+  var _initFlip = debounce(function(x,y) {
+    var pos = _getCursorPosition(x,y);
+
+    if (pos == 'l') {
+      $(selectors.flip).removeClass('is-flipped');
+    }
+    else if (pos == 'r') {
+      $(selectors.flip).addClass('is-flipped');
+    }
+    
+  }, 10);
+
+  // Variant 2
+  var _getCursorPosition = function(x,y) {
+    if (x > $(window).width()/2) {
+      return 'r';
+    }
+    else {
+      return 'l';
+    }
+  };
+
 
   var _initAnimation = debounce(function(x,y) {
     var pos = _getMousePosition(x,y);

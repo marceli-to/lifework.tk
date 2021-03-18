@@ -23,7 +23,8 @@
 </head>
 <body>
 @if (request()->routeIs('page.home'))
-  @include('web.partials.circles-home')
+  {{-- @include('web.partials.circles-home') --}}
+  @include('web.partials.circles-flip')
 @else
   @include('web.partials.circles')
 @endif
