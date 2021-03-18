@@ -23,4 +23,54 @@ class EventController extends BaseController
     $events = $this->event->upcoming()->get();
     return view($this->viewPath . 'events', ['title' => 'Veranstaltungen', 'events' => $events]);
   }
+
+  /**
+   * Events > Bildungskrippen
+   */
+
+  public function nurseries()
+  {
+    $events = $this->event->nurseries()->get();
+    return view($this->viewPath . 'events', ['title' => 'Veranstaltungen', 'events' => $events]);
+  }
+
+  /**
+   * Events > Kita
+   */
+
+  public function kitas()
+  {
+    $events = $this->event->kitas()->get();
+    return view($this->viewPath . 'events', ['title' => 'Veranstaltungen', 'events' => $events]);
+  }
+
+  /**
+   * Events > Führungspersonen
+   */
+
+  public function leaders()
+  {
+    $events = $this->event->leaders()->get();
+    return view($this->viewPath . 'events', ['title' => 'Veranstaltungen', 'events' => $events]);
+  }
+
+  /**
+   * Events > Unternehmen
+   */
+
+  public function companies()
+  {
+    $events = $this->event->companies()->get();
+    return view($this->viewPath . 'events', ['title' => 'Veranstaltungen', 'events' => $events]);
+  }
+
+  /**
+   * Events > Unternehmen
+   */
+
+  public function other()
+  {
+    $events = $this->event->other()->get();
+    return view($this->viewPath . 'events', ['title' => 'Veranstaltungen', 'events' => $events]);
+  }
 }

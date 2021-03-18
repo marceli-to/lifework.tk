@@ -8,7 +8,24 @@
         <a href="{{ route('page.nursery') }}" class="{{ request()->routeIs('page.nursery') ? 'is-active' : '' }}">Bildungskrippen</a>
       </li>
       <li>
-        <a href="{{ route('page.events') }}" class="{{ request()->routeIs('page.events') ? 'is-active' : '' }}">Veranstaltungen</a>
+        <a href="{{ route('page.events') }}" class="{{ request()->routeIs('page.events*') ? 'is-active' : '' }}">Veranstaltungen</a>
+        <ul style="{{ request()->routeIs('page.events*') ? 'display: block;' : 'display: none;' }}">
+          <li>
+            <a href="{{ route('page.events.nurseries') }}" class="{{ request()->routeIs('page.events.nurseries') ? 'is-active' : '' }}">für Bildungskrippen</a>
+          </li>
+          <li>
+            <a href="{{ route('page.events.kitas') }}" class="{{ request()->routeIs('page.events.kitas') ? 'is-active' : '' }}">für Kitas</a>
+          </li>
+          <li>
+            <a href="{{ route('page.events.leaders') }}" class="{{ request()->routeIs('page.events.leaders') ? 'is-active' : '' }}">für Führungspersonen</a>
+          </li>
+          <li>
+            <a href="{{ route('page.events.companies') }}" class="{{ request()->routeIs('page.events.companies') ? 'is-active' : '' }}">für Unternehmen</a>
+          </li>
+          <li>
+            <a href="{{ route('page.events.other') }}" class="{{ request()->routeIs('page.events.other') ? 'is-active' : '' }}">für andere</a>
+          </li>
+        </ul>
       </li>
     </ul>
     <ul>

@@ -29,6 +29,11 @@ Route::get('/kontakt', 'PageController@contact')->name('page.contact');
 
 // Page: Events
 Route::get('/veranstaltungen', 'EventController@index')->name('page.events');
+Route::get('/veranstaltungen/fuer-bildungskrippen', 'EventController@nurseries')->name('page.events.nurseries');
+Route::get('/veranstaltungen/fuer-kitas', 'EventController@kitas')->name('page.events.kitas');
+Route::get('/veranstaltungen/fuer-fuehrungspersonen', 'EventController@leaders')->name('page.events.leaders');
+Route::get('/veranstaltungen/fuer-unternehmen', 'EventController@companies')->name('page.events.companies');
+Route::get('/veranstaltungen/fuer-andere', 'EventController@other')->name('page.events.other');
 
 // Url based images
 Route::get('/img/{template}/{filename}', 'ImageController@getResponse');
