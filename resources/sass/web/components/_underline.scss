@@ -34,7 +34,8 @@
 
 %underline-menu {
   transition: all .1s ease-out;
-  box-shadow:  0 -.06em 0 0 $color-sand inset, 0 -.1em 0 0 $color-black inset;
+  //box-shadow:  0 -.06em 0 0 $color-sand inset, 0 -.1em 0 0 $color-black inset;
+  box-shadow:  0 -.06em 0 0 $color-black inset, 0 -.1em 0 0 transparent inset;
   text-decoration: none;
 }
 
