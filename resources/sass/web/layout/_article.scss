@@ -141,8 +141,8 @@ article.content-list--team {
     }
 
     figure {
-      display: flex;
-      justify-content: space-between;
+      // display: flex;
+      // justify-content: space-between;
 
       img {
         @extend %is-responsive;
