@@ -141,8 +141,13 @@ article.content-list--team {
     }
 
     figure {
-      // display: flex;
-      // justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      > div {
+        display: flex;
+        justify-content: flex-end;
+      }
 
       img {
         @extend %is-responsive;
