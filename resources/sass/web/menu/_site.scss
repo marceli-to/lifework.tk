@@ -18,6 +18,12 @@ nav.site__nav {
     pointer-events: all;
     transition: opacity .12s .36s ease-out;
     z-index: 301;
+
+    > div {
+      height: inherit;
+      overflow-y: auto;
+      width: 100%;
+    }
   }
 
   @include bp-sm() {
@@ -33,7 +39,11 @@ nav.site__nav {
   }
 
   ul {
-    margin-bottom: calc(#{$space-lg} - #{$space-xxs});
+    margin-bottom: $space-xs;
+
+    @include bp-sm() {
+      margin-bottom: calc(#{$space-lg} - #{$space-xxs});
+    }
 
     &:last-of-type {
       margin-bottom: 0;
@@ -42,7 +52,7 @@ nav.site__nav {
 
   ul ul {
     margin-left: $space-sm;
-    margin-bottom: $space-sm !important;
+    margin-bottom: $space-xs !important;
   }
 
   li {
