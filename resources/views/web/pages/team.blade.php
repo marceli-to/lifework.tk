@@ -42,9 +42,7 @@
             @if ($member->images)
               @foreach($member->images as $image)
                 @if ($loop->first)
-                <div>
                   <img src="/img/cache/{{$image->name}}?w=600&h=800&c={{$image->coords}}" width="1333" height="1000" alt="{{ $member->firstname }} {{ $member->name }}">
-                </div>
                 @endif
               @endforeach
             @endif

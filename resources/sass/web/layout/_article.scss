@@ -144,11 +144,6 @@ article.content-list--team {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
 
-      > div {
-        display: flex;
-        justify-content: flex-end;
-      }
-
       img {
         @extend %is-responsive;
         max-width: 120px;
