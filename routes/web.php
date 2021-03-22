@@ -38,6 +38,10 @@ Route::get('/veranstaltungen/fuer-andere', 'EventController@other')->name('page.
 // Url based images
 Route::get('/img/{template}/{filename}', 'ImageController@getResponse');
 
+Route::get('/confirmation', function () {
+  return new App\Mail\ConfirmationMail();
+});
+
 /*
 |--------------------------------------------------------------------------
 | Authenticated web routes

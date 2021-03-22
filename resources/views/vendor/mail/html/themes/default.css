@@ -1,7 +1,7 @@
 /* Base */
 body,
 body *:not(html):not(style):not(br):not(tr):not(code) {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+  font-family: Helvetica, Arial, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
   font-weight: 400;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -9,12 +9,12 @@ body *:not(html):not(style):not(br):not(tr):not(code) {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #cdc3b9;
   color: #000000;
   height: 100%;
   hyphens: auto;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
   -moz-hyphens: auto;
   -ms-word-break: break-all;
@@ -67,8 +67,8 @@ h2 {
 
 p {
   color: #000000;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 24px;
   margin-top: 0;
   margin-bottom: 20px;
   text-align: left;
@@ -106,27 +106,28 @@ img {
 /* Header */
 
 .header {
-  padding: 25px 0 40px 0;
+  background-color: #fffff0;
+  padding: 25px 0 25px 0;
   text-align: center;
 }
 
 .header a { 
   display: block;
-  height: 29px;
-  width: 200px;
+  height: auto;
+  width: 260px;
   text-decoration: none;
 }
 
 .header > div {
   margin: 0;
   padding: 0 40px;
-  max-width: 580px; 
+  max-width: 720px; 
 }
 
 /* Body */
 
 .body {
-  background-color: #ffffff;
+  background-color: #cdc3b9;
   border: none;
   margin: 0;
   padding: 0;
@@ -137,13 +138,13 @@ img {
 }
 
 .inner-body {
-  background-color: #ffffff;
+  background-color: #cdc3b9;
   margin: 0;
   padding: 0;
-  max-width: 640px;
+  max-width: 720px;
   -premailer-cellpadding: 0;
   -premailer-cellspacing: 0;
-  -premailer-width: 570px;
+  -premailer-width: 720px;
 }
 
 /* Subcopy */
@@ -164,10 +165,10 @@ img {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  width: 570px;
+  width: 720px;
   -premailer-cellpadding: 0;
   -premailer-cellspacing: 0;
-  -premailer-width: 570px;
+  -premailer-width: 720px;
 }
 
 .footer p {
@@ -181,7 +182,7 @@ img {
 .table table {
   border-top: 1px solid #000;
   margin: 0 0 30px 0;
-  max-width: 580px;
+  max-width: 720px;
   width: 100%;
   -premailer-cellpadding: 0;
   -premailer-cellspacing: 0;
@@ -198,20 +199,21 @@ img {
 .table table td {
   border-bottom: 1px solid #000;
   color: #000000;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 24px;
   padding: 8px 0;
   margin: 0;
   vertical-align: top;
 }
 
 .table table td:nth-child(1) {
+  min-width: 160px;
   padding-right: 10px;
 }
 
 
 .content-cell {
-  padding: 5px 40px;
+  padding: 40px 40px 10px 40px;
 }
 
 /* Buttons */
@@ -310,8 +312,7 @@ img {
 
 
 .signature {
-  font-size: 14px;
-  line-height: 18px;
+
   margin-top: 30px;
 }
 

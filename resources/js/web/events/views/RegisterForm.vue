@@ -6,32 +6,64 @@
       <div>
         <header>Ja, ich melde mich an</header>
         <div class="form-group">
+          <label>Anmeldung für</label>
+          <div class="select-wrapper">
+            <select v-model="form.type">
+              <option value="1">mich selbst</option>
+              <option value="2">jemand anderes</option>
+            </select>
+          </div>
+        </div>
+        <div :class="[this.errors.firstname ? 'has-error' : '', 'form-group']">
           <label>Vorname *</label>
           <input type="text" v-model="form.firstname" name="firstname">
         </div>
-        <div class="form-group">
+        <div :class="[this.errors.name ? 'has-error' : '', 'form-group']">
           <label>Name *</label>
           <input type="text" v-model="form.name" name="name">
         </div>
-        <div class="form-group">
-          <label>Strasse / Nr. *</label>
-          <input type="text" v-model="form.street" name="street">
-        </div>
-        <div class="form-group">
-          <label>PLZ / Ort *</label>
-          <input type="text" v-model="form.location" name="location">
-        </div>
-        <div class="form-group">
-          <label>Telefon P *</label>
-          <input type="text" v-model="form.phone_private" name="phone_private">
-        </div>
-        <div class="form-group">
-          <label>Telefon G</label>
-          <input type="text" v-model="form.phone_business" name="phone_business">
-        </div>
-        <div class="form-group">
+        <div :class="[this.errors.email ? 'has-error' : '', 'form-group']">
           <label>E-Mail *</label>
           <input type="text" v-model="form.email" name="email">
+        </div>
+        <div :class="[this.errors.phone ? 'has-error' : '', 'form-group']">
+          <label>Telefon *</label>
+          <input type="text" v-model="form.phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label>Organisation</label>
+          <input type="text" v-model="form.organisation" name="organisation">
+        </div>
+        <div :class="[this.errors.address ? 'has-error' : '', 'form-group']">
+          <label>Rechnungsadresse *</label>
+          <textarea v-model="form.address" name="address"></textarea>
+        </div>
+
+        <div v-if="form.type == 2">
+          <header>Daten Teilnehmer*in</header>
+          <div :class="[this.errors.participant_firstname ? 'has-error' : '', 'form-group']">
+            <label>Vorname *</label>
+            <input type="text" v-model="form.participant_firstname" name="firstname">
+          </div>
+          <div :class="[this.errors.participant_name ? 'has-error' : '', 'form-group']">
+            <label>Name *</label>
+            <input type="text" v-model="form.participant_name" name="name">
+          </div>
+          <div :class="[this.errors.participant_email ? 'has-error' : '', 'form-group']">
+            <label>E-Mail *</label>
+            <input type="text" v-model="form.participant_email" name="email">
+          </div>
+          <div :class="[this.errors.participant_phone ? 'has-error' : '', 'form-group']">
+            <label>Telefon *</label>
+            <input type="text" v-model="form.participant_phone" name="phone">
+          </div>
+        </div>
+        <div class="form-group-checkbox">
+          <div>
+            <input type="checkbox" name="is_member" value="1" id="is_member" ref="is_member" v-model="form.is_member">
+            <div class="checkbox"><span></span></div>
+          </div>
+          <label for="is_member">Mitglied Netzwerk Bildungsort Kita</label>
         </div>
         <div class="form-group-checkbox">
           <div>
@@ -75,22 +107,31 @@ export default {
       form: {
         firstname: null,
         name: null,
-        street: null,
-        location: null,
-        phone_private: null,
-        phone_business: null,
         email: null,
+        phone: null,
+        address: null,
+        organisation: null,
         event_id: null,
+        is_member: 0,
+        type: 1,
+        participant_firstname: null,
+        participant_name: null,
+        participant_email: null,
+        participant_phone: null,
       },
 
       // Validation
       errors: {
         firstname: false,
         name: false,
-        street: false,
-        location: false,
-        phone_private: false,
         email: false,
+        phone: false,
+        address: false,
+        organisation: false,
+        participant_firstname: false,
+        participant_name: false,
+        participant_email: false,
+        participant_phone: false,
       },
 
       // States
@@ -124,14 +165,33 @@ export default {
     },
 
     reset() {
-      this.form.firstname = null;
-      this.form.name = null;
-      this.form.street = null;
-      this.form.location = null;
-      this.form.phone_private = null;
-      this.form.phone_business = null;
-      this.form.email = null;
+
+      // Reset errors
+      this.resetErrors();
+      
+      // Reset v-model
+      var _that = this;
+      Object.keys(this.form).forEach(function(key,index) {
+        _that.form[key] = '';
+      });
+
+      // Reset event id
+      this.form.event_id = this.$props.eventId
+
+      // Reset form
+      this.$el.querySelector('form').reset();
+
+      // Reset selects to first element
+      this.$el.querySelectorAll('select').forEach(e => e.selectedIndex = 0);
+    },
+
+    resetErrors() {
+      var _that = this;
+      Object.keys(this.errors).forEach(function(key,index) {
+        _that.form[key] = false;
+      });
     }
+
   }
 }
 </script>

@@ -15,15 +15,22 @@ class CreateEventSubscribersTable extends Migration
     {
         Schema::create('event_subscribers', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 255);
             $table->string('firstname', 255);
-            $table->string('street', 255);
-            $table->string('location', 255);
-            $table->string('phone_business', 255)->nullable();
-            $table->string('phone_private', 255);
+            $table->string('name', 255);
             $table->string('email', 255);
+            $table->string('phone', 255);
+            $table->string('organisation', 255)->nullable();
+            $table->text('address')->nullable();
+            $table->string('participant_firstname', 255)->nullable();
+            $table->string('participant_name', 255)->nullable();
+            $table->string('participant_email', 255)->nullable();
+            $table->string('participant_phone', 255)->nullable();
+            $table->tinyInteger('type')->default(1);
+            $table->tinyInteger('is_member')->default(0);
             $table->string('event_title', 255)->nullable();
             $table->string('event_date', 255)->nullable();
+            $table->string('event_time', 255)->nullable();
+            $table->string('event_location', 255)->nullable();
             $table->timestamps();
         });
     }

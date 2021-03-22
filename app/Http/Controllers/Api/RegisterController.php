@@ -26,8 +26,11 @@ class RegisterController extends Controller
     $event = $this->event->findOrFail($request->event_id);
 
     $eventSubscriber = EventSubscriber::create($request->all());
+    $eventSubscriber->is_member = $request->input('is_member') ? 1 : 0;
     $eventSubscriber->event_title = $event->title;
     $eventSubscriber->event_date = $event->date;
+    $eventSubscriber->event_time = $event->time;
+    $eventSubscriber->event_location = $event->location;
     $eventSubscriber->save();
 
     // Trigger event

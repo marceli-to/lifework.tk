@@ -6,14 +6,21 @@ use Illuminate\Database\Eloquent\Model;
 class EventSubscriber extends Base
 {
 	protected $fillable = [
-    'name',
     'firstname',
-    'street',
-    'location',
-    'phone_business',
-    'phone_private',
+    'name',
     'email',
+    'phone',
+    'organisation',
+    'address',
+    'participant_firstname',
+    'participant_name',
+    'participant_email',
+    'participant_phone',
+    'type',
+    'is_member',
     'event_title',
     'event_date',
+    'event_time',
+    'event_location',
   ];
 }

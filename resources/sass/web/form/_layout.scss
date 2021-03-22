@@ -13,10 +13,11 @@ fieldset {
 
 
 .form-group {
-	align-items: center;
+	align-items: flex-start;
 	display: block;
 	margin-bottom: $space-xs;
 	position: relative;
+	padding-top: 2px;
 }
 
 .form-group-button {

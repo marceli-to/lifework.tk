@@ -14,7 +14,7 @@ class ConfirmationMail extends Mailable
    *
    * @return void
    */
-  public function __construct($data)
+  public function __construct($data = array())
   {
     $this->data = $data;
   }

@@ -5,7 +5,7 @@
  */
 
 .select-wrapper {
-  background-color: transparent;
+  background-color: $color-white;
   display: inline-block;
   position: relative;
   width: 100%;
@@ -35,7 +35,7 @@
     background-color: transparent !important;
     display: block;
     @include font-size($fs-sm);
-    padding: 11px 50px 9px 1px;
+    padding: 3px 25px 3px 3px;
     width: 100%;
 
     &:hover {
