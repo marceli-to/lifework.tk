@@ -12,10 +12,6 @@
         <td>{{$eventSubscriber->event_date}}</td>
       </tr>
       <tr>
-        <td>Datum</td>
-        <td>{{$eventSubscriber->event_date}}</td>
-      </tr>
-      <tr>
         <td>Zeit</td>
         <td>{{$eventSubscriber->event_time}}</td>
       </tr>
