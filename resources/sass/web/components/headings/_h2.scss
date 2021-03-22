@@ -9,12 +9,17 @@ h2 {
 
   &.has-logo {
     display: flex;
+    
     svg {
-      display: block;
+      display: none;
       height: auto;
       margin-left: $space-sm;
       max-width: 120px;
       width: 100%;
+
+      @include bp-sm() {
+        display: block;
+      }
 
       @include bp-md() {
         max-width: 200px;
