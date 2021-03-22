@@ -154,7 +154,7 @@ article.content-list--team {
       }
 
       &.is-intro {
-        display: flex;
+        grid-template-columns: repeat(1, 1fr);
         justify-content: flex-end;
         img {
           max-width: 50% !important;
