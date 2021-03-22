@@ -143,8 +143,8 @@ article.content-list--team {
     figure {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      justify-items: space-between;
-      
+      justify-items: flex-end;
+
       img {
         @extend %is-responsive;
         max-width: 120px;
