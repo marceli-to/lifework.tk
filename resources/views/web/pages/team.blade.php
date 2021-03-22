@@ -13,7 +13,7 @@
     @foreach($members as $member)
       <article class="content-list content-list--team">
         <div class="content-list__inner">
-          <a href="javascript:;" class="btn-arrow is-first js-btn-article"></a>
+          <a href="javascript:;" class="btn-arrow js-btn-article"></a>
           <h2>{{ $member->firstname }} {{ $member->name }}:</h2>
           @if ($member->quote)
             <a href="javascript:;" class="js-btn-article">«{{ $member->quote }}»</a>
@@ -42,7 +42,9 @@
             @if ($member->images)
               @foreach($member->images as $image)
                 @if ($loop->first)
-                  <img src="/img/cache/{{$image->name}}?w=600&h=800&c={{$image->coords}}" width="1333" height="1000" alt="{{ $member->firstname }} {{ $member->name }}">
+                  <div>
+                    <img src="/img/cache/{{$image->name}}?w=600&h=800&c={{$image->coords}}" width="1333" height="1000" alt="{{ $member->firstname }} {{ $member->name }}">
+                  </div>
                 @endif
               @endforeach
             @endif

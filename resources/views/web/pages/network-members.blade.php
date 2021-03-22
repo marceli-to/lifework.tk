@@ -6,7 +6,7 @@
     @foreach($members as $member)
       <article class="content-list content-list--team">
         <div class="content-list__inner">
-          <a href="javascript:;" class="btn-arrow is-first js-btn-article"></a>
+          <a href="javascript:;" class="btn-arrow @if ($loop->first) is-first @endif js-btn-article"></a>
           <h2>{{ $member->firstname }} {{ $member->name }}:</h2>
           @if ($member->quote)
             <a href="javascript:;" class="js-btn-article">«{{ $member->quote }}»</a>

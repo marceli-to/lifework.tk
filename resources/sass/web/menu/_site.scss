@@ -39,7 +39,7 @@ nav.site__nav {
   }
 
   ul {
-    margin-bottom: $space-xs;
+    margin-bottom: $space-md;
 
     @include bp-sm() {
       margin-bottom: calc(#{$space-lg} - #{$space-xxs});

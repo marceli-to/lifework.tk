@@ -142,21 +142,14 @@ article.content-list--team {
 
     figure {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: flex-end;
+      grid-template-columns: auto 33.3333%;
 
       img {
         @extend %is-responsive;
-        max-width: 120px;
-        
-        @include bp-sm() {
-          max-width: 33.3333%;
-        }
+        max-width: 100%;
       }
 
       &.is-intro {
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: end;
         img {
           max-width: 50% !important;
         }
