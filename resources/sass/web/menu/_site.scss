@@ -24,10 +24,15 @@ nav.site__nav {
       overflow-y: auto;
       width: 100%;
     }
+
+    @include bp-sm() {
+      height: auto;
+    }
   }
 
   @include bp-sm() {
     bottom: calc(#{$space-lg} - #{$space-xxs});
+    height: auto;
     opacity: 1;
     pointer-events: all;
     position: fixed;
@@ -78,7 +83,7 @@ nav.site__nav {
     }
 
     &.is-active {
-      @extend %underline-menu;
+      @extend %underline;
       color: $color-black !important;
     }
   }
