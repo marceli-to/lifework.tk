@@ -5,74 +5,91 @@
  *
  */
 
-%underline-hover {
-  color: $color-black;
-  text-decoration: none !important;
-  text-shadow: 
-    0px -.1em 0 $color-eggshell,  0px -.06em 0 $color-eggshell,  0px 0px 0 $color-eggshell,
-    .1em -.1em 0 $color-eggshell,  .1em -.06em 0 $color-eggshell,  .1em 0px 0 $color-eggshell,
-    -.1em -.1em 0 $color-eggshell, -.1em -.06em 0 $color-eggshell, -.1em 0px 0 $color-eggshell,
-    .06em -.1em 0 $color-eggshell,  .06em -.06em 0 $color-eggshell,  .06em 0px 0 $color-eggshell,
-    -.06em -.1em 0 $color-eggshell, -.06em -.06em 0 $color-eggshell, -.06em 0px 0 $color-eggshell,
-    0px -.1em 0 $color-eggshell,  0px -.06em 0 $color-eggshell,  0px 0px 0 $color-eggshell;
-  box-shadow: 0 -.06em 0 0 $color-eggshell inset, 0 -.1em 0 0 transparent inset;  
-  transition: all .1s ease-in;
-  
-  &.is-active,
-  &:hover {
-    transition: all .1s ease-out;
-    box-shadow:  0 -.06em 0 0 $color-eggshell inset, 0 -.1em 0 0 $color-black inset ;
-    text-decoration: none;
-  }
-}
-
 %underline {
-  transition: all .1s ease-out;
-  box-shadow:  0 -.06em 0 0 $color-eggshell inset, 0 -.1em 0 0 $color-black inset;
+  background-image: linear-gradient(to right,$color-black 0,$color-black 100%);
+  background-repeat: repeat-x;
+  background-position: bottom .05em left;
+  background-size: 100% .05em;
   text-decoration: none;
-}
-
-%underline-menu {
   transition: all .1s ease-out;
-  //box-shadow:  0 -.06em 0 0 $color-sand inset, 0 -.1em 0 0 $color-black inset;
-  box-shadow:  0 -.05em 0 0 $color-black inset, 0 -.1em 0 0 transparent inset;
-  text-decoration: none;
-}
-
-%underline-dark {
-  transition: all .1s ease-out;
-  box-shadow:  0 -.06em 0 0 $color-ocean inset, 0 -.1em 0 0 $color-black inset;
-  text-decoration: none;
 }
 
 %underline-anchor {
   &.is-active,
   &:hover {
-    text-decoration: none !important;
-    text-shadow: 
-      0px -.1em 0 $color-eggshell,  0px -.06em 0 $color-eggshell,  0px 0px 0 $color-eggshell,
-      .1em -.1em 0 $color-eggshell,  .1em -.06em 0 $color-eggshell,  .1em 0px 0 $color-eggshell,
-      -.1em -.1em 0 $color-eggshell, -.1em -.06em 0 $color-eggshell, -.1em 0px 0 $color-eggshell,
-      .06em -.1em 0 $color-eggshell,  .06em -.06em 0 $color-eggshell,  .06em 0px 0 $color-eggshell,
-      -.06em -.1em 0 $color-eggshell, -.06em -.06em 0 $color-eggshell, -.06em 0px 0 $color-eggshell,
-      0px -.1em 0 $color-eggshell,  0px -.06em 0 $color-eggshell,  0px 0px 0 $color-eggshell;
-    box-shadow: 0 -.06em 0 0 $color-eggshell inset, 0 -.1em 0 0 transparent inset;  
-    transition: all .1s ease-in;
+    background-image: none;
   }
 }
 
-%underline-anchor-dark {
-  &.is-active,
-  &:hover {
-    text-decoration: none !important;
-    text-shadow: 
-      0px -.1em 0 $color-ocean,  0px -.06em 0 $color-ocean,  0px 0px 0 $color-ocean,
-      .1em -.1em 0 $color-ocean,  .1em -.06em 0 $color-ocean,  .1em 0px 0 $color-ocean,
-      -.1em -.1em 0 $color-ocean, -.1em -.06em 0 $color-ocean, -.1em 0px 0 $color-ocean,
-      .06em -.1em 0 $color-ocean,  .06em -.06em 0 $color-ocean,  .06em 0px 0 $color-ocean,
-      -.06em -.1em 0 $color-ocean, -.06em -.06em 0 $color-ocean, -.06em 0px 0 $color-ocean,
-      0px -.1em 0 $color-ocean,  0px -.06em 0 $color-ocean,  0px 0px 0 $color-ocean;
-    box-shadow: 0 -.06em 0 0 $color-ocean inset, 0 -.1em 0 0 transparent inset;  
-    transition: all .1s ease-in;
-  }
-}
+
+/* old */ 
+// %underline-hover {
+//   color: $color-black;
+//   text-decoration: none !important;
+//   text-shadow: 
+//     0px -.1em 0 $color-eggshell,  0px -.06em 0 $color-eggshell,  0px 0px 0 $color-eggshell,
+//     .1em -.1em 0 $color-eggshell,  .1em -.06em 0 $color-eggshell,  .1em 0px 0 $color-eggshell,
+//     -.1em -.1em 0 $color-eggshell, -.1em -.06em 0 $color-eggshell, -.1em 0px 0 $color-eggshell,
+//     .06em -.1em 0 $color-eggshell,  .06em -.06em 0 $color-eggshell,  .06em 0px 0 $color-eggshell,
+//     -.06em -.1em 0 $color-eggshell, -.06em -.06em 0 $color-eggshell, -.06em 0px 0 $color-eggshell,
+//     0px -.1em 0 $color-eggshell,  0px -.06em 0 $color-eggshell,  0px 0px 0 $color-eggshell;
+//   box-shadow: 0 -.06em 0 0 $color-eggshell inset, 0 -.1em 0 0 transparent inset;  
+//   transition: all .1s ease-in;
+  
+//   &.is-active,
+//   &:hover {
+//     transition: all .1s ease-out;
+//     box-shadow:  0 -.06em 0 0 $color-eggshell inset, 0 -.1em 0 0 $color-black inset ;
+//     text-decoration: none;
+//   }
+// }
+
+// %underline {
+//   transition: all .1s ease-out;
+//   box-shadow:  0 -.06em 0 0 $color-eggshell inset, 0 -.1em 0 0 $color-black inset;
+//   text-decoration: none;
+// }
+
+// %underline-menu {
+//   transition: all .1s ease-out;
+//   box-shadow:  0 -.06em 0 0 $color-sand inset, 0 -.1em 0 0 $color-black inset;
+//   text-decoration: none;
+// }
+
+// %underline-dark {
+//   transition: all .1s ease-out;
+//   box-shadow:  0 -.06em 0 0 $color-ocean inset, 0 -.1em 0 0 $color-black inset;
+//   text-decoration: none;
+// }
+
+// %underline-anchor {
+//   &.is-active,
+//   &:hover {
+//     text-decoration: none !important;
+//     text-shadow: 
+//       0px -.1em 0 $color-eggshell,  0px -.06em 0 $color-eggshell,  0px 0px 0 $color-eggshell,
+//       .1em -.1em 0 $color-eggshell,  .1em -.06em 0 $color-eggshell,  .1em 0px 0 $color-eggshell,
+//       -.1em -.1em 0 $color-eggshell, -.1em -.06em 0 $color-eggshell, -.1em 0px 0 $color-eggshell,
+//       .06em -.1em 0 $color-eggshell,  .06em -.06em 0 $color-eggshell,  .06em 0px 0 $color-eggshell,
+//       -.06em -.1em 0 $color-eggshell, -.06em -.06em 0 $color-eggshell, -.06em 0px 0 $color-eggshell,
+//       0px -.1em 0 $color-eggshell,  0px -.06em 0 $color-eggshell,  0px 0px 0 $color-eggshell;
+//     box-shadow: 0 -.06em 0 0 $color-eggshell inset, 0 -.1em 0 0 transparent inset;  
+//     transition: all .1s ease-in;
+//   }
+// }
+
+// %underline-anchor-dark {
+//   &.is-active,
+//   &:hover {
+//     text-decoration: none !important;
+//     text-shadow: 
+//       0px -.1em 0 $color-ocean,  0px -.06em 0 $color-ocean,  0px 0px 0 $color-ocean,
+//       .1em -.1em 0 $color-ocean,  .1em -.06em 0 $color-ocean,  .1em 0px 0 $color-ocean,
+//       -.1em -.1em 0 $color-ocean, -.1em -.06em 0 $color-ocean, -.1em 0px 0 $color-ocean,
+//       .06em -.1em 0 $color-ocean,  .06em -.06em 0 $color-ocean,  .06em 0px 0 $color-ocean,
+//       -.06em -.1em 0 $color-ocean, -.06em -.06em 0 $color-ocean, -.06em 0px 0 $color-ocean,
+//       0px -.1em 0 $color-ocean,  0px -.06em 0 $color-ocean,  0px 0px 0 $color-ocean;
+//     box-shadow: 0 -.06em 0 0 $color-ocean inset, 0 -.1em 0 0 transparent inset;  
+//     transition: all .1s ease-in;
+//   }
+// }

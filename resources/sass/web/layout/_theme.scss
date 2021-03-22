@@ -4,7 +4,7 @@
  * -----------------------------------------------------------------------------
  */
 
-section.theme-light {
+ section.theme-light {
   
   h2.underline {
     span {
@@ -12,7 +12,7 @@ section.theme-light {
     }
   }
 
-  a {
+  a:not(.btn-arrow) {
     @extend %underline;
     @extend %underline-anchor;
   }
@@ -27,13 +27,48 @@ section.theme-dark {
 
   h2.underline {
     span {
-      @extend %underline-dark;
+      @extend %underline;
     }
   }
 
   a:not(.btn-arrow):not(.btn-primary) {
-    @extend %underline-dark;
-    @extend %underline-anchor-dark;
+    @extend %underline;
+    @extend %underline-anchor;
     color: $color-black;
   }
 }
+
+/* old */
+// section.theme-light {
+  
+//   h2.underline {
+//     span {
+//       @extend %underline;
+//     }
+//   }
+
+//   a {
+//     @extend %underline;
+//     @extend %underline-anchor;
+//   }
+// }
+
+// section.theme-medium {
+//   background-color: $color-lemon;
+// }
+
+// section.theme-dark {
+//   background-color: $color-ocean;
+
+//   h2.underline {
+//     span {
+//       @extend %underline-dark;
+//     }
+//   }
+
+//   a:not(.btn-arrow):not(.btn-primary) {
+//     @extend %underline-dark;
+//     @extend %underline-anchor-dark;
+//     color: $color-black;
+//   }
+// }
