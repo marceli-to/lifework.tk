@@ -150,6 +150,8 @@ article.content-list--team {
       }
 
       &.is-intro {
+        grid-template-columns: 1fr;
+        justify-items: end;
         img {
           max-width: 50% !important;
         }

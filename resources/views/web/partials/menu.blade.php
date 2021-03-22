@@ -1,6 +1,9 @@
 <nav class="site__nav js-menu">
   <div>
     <ul>
+      <li class="is-home">
+        <a href="{{ route('page.home') }}">Home</a>
+      </li>
       <li>
         <a href="{{ route('page.services') }}" class="{{ request()->routeIs('page.services') ? 'is-active' : '' }}">Angebot</a>
       </li>
@@ -56,9 +59,6 @@
       </li>
       <li>
         <a href="{{ route('page.contact') }}" class="{{ request()->routeIs('page.contact') ? 'is-active' : '' }}">Kontakt</a>
-      </li>
-      <li class="is-home">
-        <a href="{{ route('page.home') }}">Home</a>
       </li>
     </ul>
   </div>
