@@ -10,7 +10,7 @@
       </h2>
       <div class="content-list__body">
         <p>Bildungskrippen ist ein Angebot der lifework tk ag. Es ist die Schweizer Umsetzung des infans-Konzepts für Frühpädagogik – praxiserprobt und konkret, mit zahlreichen Methoden und Instrumenten für die pädagogische Arbeit. Das Konzept haben wir gemeinsam mit Hans-Joachim Laewen und Beate Andres (infans e.V.) für Schweizer Kitas entwickelt.</p> 
-        <p>Bildungskrippen ist Teil des Netzwerks „Bildungsort Kita“. Diesem gehören Kitas an, die entweder nach Bildungskrippen oder nach BULG arbeiten. Gemeinsames Kernanliegen ist die Umsetzung einer hohen pädagogischen Qualität durch Bildungsorientierung. Das Netzwerk bietet Weiterbildung, Austauschmöglichkeiten, Coaching und Kitabesichtigungen an.</p>
+        <p>Bildungskrippen ist Teil des Netzwerks „Bildungsort Kita“. Diesem gehören Kitas an, die entweder nach dem Konzept von Bildungskrippen oder nach jenem von BULG (Bildungs- und Lerngeschichten) arbeiten. Gemeinsames Kernanliegen ist die Umsetzung einer hohen pädagogischen Qualität durch Bildungsorientierung. Das Netzwerk bietet Weiterbildung, Austauschmöglichkeiten, Coaching und Kitabesichtigungen an.</p>
         <p>Die Website Bildungsort Kita ist aktuell in Arbeit und wird demnächst aufgeschaltet.</p>
         <p class="fs-sm">Kontakt: <a href="mailto:theres.hofmann@lifework.ch" target="_blank">Theres Hofmann</a></p>
       </div>
