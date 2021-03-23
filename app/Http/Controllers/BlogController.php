@@ -23,5 +23,4 @@ class BlogController extends BaseController
     $posts = $this->post->published()->with('publishedImages')->orderBy('date', 'DESC')->get();
     return view($this->viewPath . 'blog', ['title' => 'Blog', 'posts' => $posts]);
   }
-
 }
