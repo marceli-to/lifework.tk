@@ -181,6 +181,9 @@ export default {
 
       // Reset selects to first element
       this.$el.querySelectorAll('select').forEach(e => e.selectedIndex = 0);
+
+      // hide form
+      this.$el.querySelectorAll('.event-form').forEach(e => e.classList.remove('is-visible'));
     },
 
     resetErrors() {
