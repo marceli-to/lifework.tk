@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="isVisible">
     <notifications classes="notification" :position="'top left'" />
     <loading-indicator v-if="isLoading"></loading-indicator>
     <form>
@@ -134,6 +134,7 @@ export default {
 
       // States
       isLoading: false,
+      isVisible: true,
     };
   },
 
@@ -183,7 +184,7 @@ export default {
       this.$el.querySelectorAll('select').forEach(e => e.selectedIndex = 0);
 
       // hide form
-      this.$el.querySelectorAll('.event-form').forEach(e => e.classList.remove('is-visible'));
+      this.isVisible = false;
     },
 
     resetErrors() {
