@@ -29,10 +29,9 @@ class RegisterRequest extends FormRequest
       'email'          => 'required|email:filter',
       'phone'          => 'required',
       'address'        => 'required',
+      'organisation' => 'required_if:type,2',
       'participant_firstname' => 'required_if:type,2',
       'participant_name' => 'required_if:type,2',
-      'participant_email' => 'required_if:type,2',
-      'participant_phone' => 'required_if:type,2',
     ];
   }
 
@@ -76,7 +75,10 @@ class RegisterRequest extends FormRequest
         'field' => 'address',
         'error' => 'Rechnungsadresse wird benötigt!'
       ],
-
+      'organisation.required_if' => [
+        'field' => 'organisation',
+        'error' => 'Organisation wird benötigt!'
+      ],
       'participant_firstname.required_if' => [
         'field' => 'participant_firstname',
         'error' => 'Teilnehmer Vorname wird benötigt!'
@@ -84,14 +86,6 @@ class RegisterRequest extends FormRequest
       'participant_name.required_if' => [
         'field' => 'participant_name',
         'error' => 'Teilnehmer Name wird benötigt!'
-      ],
-      'participant_email.required_if' => [
-        'field' => 'participant_email',
-        'error' => 'Teilnehmer E-Mail wird benötigt!'
-      ],
-      'participant_phone.required_if' => [
-        'field' => 'participant_phone',
-        'error' => 'Teilnehmer Telefon wird benötigt!'
       ],
     ];
   }

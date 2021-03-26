@@ -52,5 +52,12 @@ header.site__header {
       height: calc(100vh - #{$space-xxl});
     }
   }
+}
 
+header.form__header {
+  margin-top: $space-md;
+
+  @include bp-md() {
+    margin-top: $space-lg;
+  }
 }

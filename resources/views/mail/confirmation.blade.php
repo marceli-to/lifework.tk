@@ -41,6 +41,10 @@
         <td>{!! nl2br($eventSubscriber->address) !!}</td>
       </tr>
       <tr>
+        <td>Bemerkungen</td>
+        <td>{!! nl2br($eventSubscriber->remarks) !!}</td>
+      </tr>
+      <tr>
         <td>Organisation</td>
         <td>{{$eventSubscriber->organisation}}</td>
       </tr>
@@ -55,14 +59,6 @@
         <tr>
           <td>Name</td>
           <td>{{$eventSubscriber->participant_name}}</td>
-        </tr>
-        <tr>
-          <td>E-Mail</td>
-          <td>{{$eventSubscriber->participant_email}}</td>
-        </tr>
-        <tr>
-          <td>Telefon</td>
-          <td>{{$eventSubscriber->participant_phone}}</td>
         </tr>
       @endif
     </tbody>

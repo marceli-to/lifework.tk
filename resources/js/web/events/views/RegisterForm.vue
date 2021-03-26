@@ -9,71 +9,72 @@
           <label>Anmeldung für</label>
           <div class="select-wrapper">
             <select v-model="form.type">
+              <option value="0">Bitte wählen...</option>
               <option value="1">mich selbst</option>
               <option value="2">jemand anderes</option>
             </select>
           </div>
         </div>
-        <div :class="[this.errors.firstname ? 'has-error' : '', 'form-group']">
-          <label>Vorname *</label>
-          <input type="text" v-model="form.firstname" name="firstname">
-        </div>
-        <div :class="[this.errors.name ? 'has-error' : '', 'form-group']">
-          <label>Name *</label>
-          <input type="text" v-model="form.name" name="name">
-        </div>
-        <div :class="[this.errors.email ? 'has-error' : '', 'form-group']">
-          <label>E-Mail *</label>
-          <input type="text" v-model="form.email" name="email">
-        </div>
-        <div :class="[this.errors.phone ? 'has-error' : '', 'form-group']">
-          <label>Telefon *</label>
-          <input type="text" v-model="form.phone" name="phone">
-        </div>
-        <div class="form-group">
-          <label>Organisation</label>
-          <input type="text" v-model="form.organisation" name="organisation">
-        </div>
-        <div :class="[this.errors.address ? 'has-error' : '', 'form-group']">
-          <label>Rechnungsadresse *</label>
-          <textarea v-model="form.address" name="address"></textarea>
-        </div>
+        <div v-if="form.type == 1 || form.type == 2">
+          <div v-if="form.type == 2">
+            <header class="form__header">Daten Teilnehmer*in</header>
+            <div :class="[this.errors.participant_firstname ? 'has-error' : '', 'form-group']">
+              <label>Vorname *</label>
+              <input type="text" v-model="form.participant_firstname" name="firstname">
+            </div>
+            <div :class="[this.errors.participant_name ? 'has-error' : '', 'form-group']">
+              <label>Name *</label>
+              <input type="text" v-model="form.participant_name" name="name">
+            </div>
+          </div>
 
-        <div v-if="form.type == 2">
-          <header>Daten Teilnehmer*in</header>
-          <div :class="[this.errors.participant_firstname ? 'has-error' : '', 'form-group']">
+          <header class="form__header" v-if="form.type == 2">Meine Daten</header>
+          <div :class="[this.errors.firstname ? 'has-error' : '', 'form-group']">
             <label>Vorname *</label>
-            <input type="text" v-model="form.participant_firstname" name="firstname">
+            <input type="text" v-model="form.firstname" name="firstname">
           </div>
-          <div :class="[this.errors.participant_name ? 'has-error' : '', 'form-group']">
+          <div :class="[this.errors.name ? 'has-error' : '', 'form-group']">
             <label>Name *</label>
-            <input type="text" v-model="form.participant_name" name="name">
+            <input type="text" v-model="form.name" name="name">
           </div>
-          <div :class="[this.errors.participant_email ? 'has-error' : '', 'form-group']">
+          <div :class="[this.errors.email ? 'has-error' : '', 'form-group']">
             <label>E-Mail *</label>
-            <input type="text" v-model="form.participant_email" name="email">
+            <input type="text" v-model="form.email" name="email">
           </div>
-          <div :class="[this.errors.participant_phone ? 'has-error' : '', 'form-group']">
+          <div :class="[this.errors.phone ? 'has-error' : '', 'form-group']">
             <label>Telefon *</label>
-            <input type="text" v-model="form.participant_phone" name="phone">
+            <input type="text" v-model="form.phone" name="phone">
           </div>
-        </div>
-        <div class="form-group-checkbox">
-          <div>
-            <input type="checkbox" name="is_member" value="1" id="is_member" ref="is_member" v-model="form.is_member">
-            <div class="checkbox"><span></span></div>
+          <div :class="[this.errors.organisation ? 'has-error' : '', 'form-group']">
+            <label v-if="form.type == 1">Organisation</label>
+            <label v-if="form.type == 2">Organisation *</label>
+            <input type="text" v-model="form.organisation" name="organisation">
           </div>
-          <label for="is_member">Mitglied Netzwerk Bildungsort Kita</label>
-        </div>
-        <div class="form-group-checkbox">
-          <div>
-            <input type="checkbox" name="toc" value="1" id="toc" ref="toc">
-            <div class="checkbox"><span></span></div>
+          <div :class="[this.errors.address ? 'has-error' : '', 'form-group']">
+            <label>Rechnungsadresse *</label>
+            <textarea v-model="form.address" name="address"></textarea>
           </div>
-          <label for="toc">Ich bin mit den <a href="/agb" target="_blank">AGBs</a> einverstanden</label>
-        </div>
-        <div class="form-group form-group-button">
-          <input type="submit" class="btn-primary" @click.prevent="store()" value="anmelden">
+          <div class="form-group">
+            <label>Bemerkungen</label>
+            <textarea v-model="form.remarks" name="remarks"></textarea>
+          </div>
+          <div class="form-group-checkbox">
+            <div>
+              <input type="checkbox" name="is_member" value="1" id="is_member" ref="is_member" v-model="form.is_member">
+              <div class="checkbox"><span></span></div>
+            </div>
+            <label for="is_member">Mitglied Netzwerk Bildungsort Kita</label>
+          </div>
+          <div class="form-group-checkbox">
+            <div>
+              <input type="checkbox" name="toc" value="1" id="toc" ref="toc">
+              <div class="checkbox"><span></span></div>
+            </div>
+            <label for="toc">Ich bin mit den <a href="/agb" target="_blank">AGBs</a> einverstanden</label>
+          </div>
+          <div class="form-group form-group-button">
+            <input type="submit" class="btn-primary" @click.prevent="store()" value="anmelden">
+          </div>
         </div>
       </div>
     </form>
@@ -113,11 +114,10 @@ export default {
         organisation: null,
         event_id: null,
         is_member: 0,
-        type: 1,
+        type: 0,
         participant_firstname: null,
         participant_name: null,
-        participant_email: null,
-        participant_phone: null,
+        remarks: null,
       },
 
       // Validation
@@ -130,8 +130,6 @@ export default {
         organisation: false,
         participant_firstname: false,
         participant_name: false,
-        participant_email: false,
-        participant_phone: false,
       },
 
       // States
