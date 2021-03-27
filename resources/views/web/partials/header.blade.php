@@ -5,7 +5,7 @@
       <h1 class="is-md">
         <a href="{{ route('page.home') }}" title="Home">lifework tk ag</a>
       </h1>
-      <a href="javascript:;" class="btn-menu js-menu-btn"></a>
+      <a href="javascript:;" class="btn-menu js-menu-btn" title="Menu anzeigen"></a>
     </div>
     @include('web.partials.menu')
   </header>
