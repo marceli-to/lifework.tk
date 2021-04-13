@@ -18,6 +18,10 @@ var Menu = (function() {
     hasMenu:  'has-menu',
   };
 
+  var mq = {
+    sm: window.matchMedia("(max-width: 768px)"),
+  };
+
   // Init
   var _initialize = function() {
     _bind();
@@ -27,6 +31,21 @@ var Menu = (function() {
   var _bind = function() {
     $(selectors.body).on('click', selectors.menuBtn, function(){
       _toggle($(this));
+    });
+
+    $(selectors.body).on('click', selectors.menu + ' a.is-parent', function(e){
+
+      if (mq.sm.matches) {
+        e.preventDefault();
+        if (!$(this).hasClass(classes.active)) {
+          $(this).addClass(classes.active);
+          $(this).next('ul').show();
+        }
+        else {
+          document.location.href = $(this).attr('href');
+        }
+      }
+
     });
   };
 

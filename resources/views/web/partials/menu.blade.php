@@ -11,7 +11,7 @@
         <a href="{{ route('page.nursery') }}" class="{{ request()->routeIs('page.nursery') ? 'is-active' : '' }}">Bildungskrippen</a>
       </li>
       <li>
-        <a href="{{ route('page.events') }}" class="{{ request()->routeIs('page.events*') ? 'is-active' : '' }}">Veranstaltungen</a>
+        <a href="{{ route('page.events') }}" class="is-parent {{ request()->routeIs('page.events*') ? 'is-active' : '' }}">Veranstaltungen</a>
         <ul style="{{ request()->routeIs('page.events*') ? 'display: block;' : 'display: none;' }}">
           <x-events-menu />
         </ul>
@@ -25,7 +25,7 @@
         <a href="{{ route('page.team') }}" class="{{ request()->routeIs('page.team') ? 'is-active' : '' }}">Team</a>
       </li>
       <li>
-        <a href="{{ route('page.network.members') }}" class="{{ request()->routeIs('page.network*') ? 'is-active' : '' }}">Netzwerk</a>
+        <a href="{{ route('page.network.members') }}" class="is-parent {{ request()->routeIs('page.network*') ? 'is-active' : '' }}">Netzwerk</a>
         <ul style="{{ request()->routeIs('page.network*') ? 'display: block;' : 'display: none;' }}">
           <li>
             <a href="{{ route('page.network.members') }}" class="{{ request()->routeIs('page.network.members') ? 'is-active' : '' }}">Personen</a>
