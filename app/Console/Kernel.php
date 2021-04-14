@@ -21,7 +21,7 @@ class Kernel extends ConsoleKernel
    */
   protected function schedule(Schedule $schedule)
   {
-    $schedule->call(new EventsImport)->everyMinute();
+    // $schedule->call(new EventsImport)->everyMinute();
   }
 
   /**

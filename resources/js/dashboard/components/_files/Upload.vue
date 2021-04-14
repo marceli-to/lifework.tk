@@ -48,7 +48,7 @@ export default {
       } 
       else {
         let response = JSON.parse(file.xhr.response);
-        this.$parent.store(response);
+        this.$parent.storeFile(response);
       }
       this.$refs.dropzone.removeFile(file);
     },

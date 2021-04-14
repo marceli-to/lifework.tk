@@ -24,6 +24,9 @@ import MemberIndex from '@/views/member/Index.vue';
 import MemberCreate from '@/views/member/Create.vue';
 import MemberEdit from '@/views/member/Edit.vue';
 
+// Event files
+import MediaIndex from '@/views/media/Index.vue';
+
 const routes = [
 
   // Home
@@ -99,6 +102,13 @@ const routes = [
     name: 'member-edit',
     path: '/administration/members/edit/:id',
     component: MemberEdit,
+  },
+
+  // Event files
+  {
+    name: 'events',
+    path: '/administration/events',
+    component: MediaIndex,
   },
 
   // Authorization

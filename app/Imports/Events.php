@@ -28,11 +28,11 @@ class Events implements ToModel
       'email'            => trim($row[12]),
       'state'            => trim($row[13]),
       'dateShowUntil'    => trim($row[14]) ? \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row[14]) : null,
-      'isBildungskrippe' => trim($row[15]) ? trim($row[15]) : null,
-      'isKita'           => trim($row[16]) ? trim($row[16]) : null,
-      'isLeadership'     => trim($row[17]) ? trim($row[17]) : null,
-      'isCompany'        => trim($row[18]) ? trim($row[18]) : null,
-      'isOther'          => trim($row[19]) ? trim($row[19]) : null
+      'isBildungskrippe' => !empty($row[15]) ? trim($row[15]) : null,
+      'isKita'           => !empty($row[16]) ? trim($row[16]) : null,
+      'isLeadership'     => !empty($row[17]) ? trim($row[17]) : null,
+      'isCompany'        => !empty($row[18]) ? trim($row[18]) : null,
+      'isOther'          => !empty($row[19]) ? trim($row[19]) : null
     ]);
   }
 }

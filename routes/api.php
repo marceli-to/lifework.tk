@@ -21,6 +21,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::middleware('auth:sanctum')->group(function() {
   Route::get('user', 'Api\UserController@find');
 
+  // Files
+  Route::get('files','Api\FileController@get');
+  Route::get('files/fetch','Api\FileController@fetch');
+  Route::get('file/restore','Api\FileController@restore');
+  Route::get('file/import/{file}','Api\FileController@import');
+  Route::post('file/store','Api\FileController@store');
+  Route::delete('file/{file}', 'Api\FileController@destroy');
+
   // Post images
   Route::get('post/images/{post}', 'Api\PostImageController@get');
   Route::get('post/image/state/{postImage}', 'Api\PostImageController@toggle');

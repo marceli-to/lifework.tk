@@ -44,6 +44,16 @@
       </a>
     </div>
 
+    <div v-if="hasImport">
+      <a
+        href="javascript:;"
+        class="feather-icon"
+        @click.prevent="importEvents(id,$event)"
+      >
+        <rss-icon size="18" class="highlight"></rss-icon>
+      </a>
+    </div>
+
     <div v-if="hasCopy">
       <a
         href="javascript:;"
@@ -75,7 +85,8 @@ import {
   EditIcon,
   Trash2Icon,
   CopyIcon,
-  DownloadCloudIcon
+  DownloadCloudIcon,
+  RssIcon
 } from 'vue-feather-icons';
 
 export default {
@@ -86,7 +97,8 @@ export default {
     EditIcon,
     Trash2Icon,
     CopyIcon,
-    DownloadCloudIcon
+    DownloadCloudIcon,
+    RssIcon
   },
 
   props: {
@@ -131,6 +143,11 @@ export default {
       default: false
     },
 
+    hasImport: {
+      type: Boolean,
+      default: false
+    },
+
     routes: Object,
     record: Object,
   },
@@ -154,8 +171,18 @@ export default {
 
     showOverlay(id, $event) {
       this.$parent.showOverlay(id);
+    },
+
+    importEvents(id, $event) {
+      this.$parent.import(id)
     }
   },
 }
 </script>
+<style>
+.highlight {
+  color: #70AE6E;
+}
+</style>
+
 
