@@ -39,6 +39,11 @@
                   Moderator/in: {{$e->host}}
                 </div>
               @endif
+              @if ($e->dateDeadline)
+                <div class="list__item">
+                  Anmeldefrist: {{date('d.m.Y', strtotime($e->dateDeadline))}}
+                </div>
+              @endif
               @if ($e->cost)
                 <div class="list__item">
                   Kosten: {{$e->cost}}
