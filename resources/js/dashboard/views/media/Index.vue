@@ -28,7 +28,7 @@
             :key="f.id"
           >
             <div class="listing__item-body">
-              <a :href="'/storage/uploads/files/' + f.name" target="_blank"> {{ f.name }}</a> <separator /> {{ f.size}} <separator /> {{ f.type }}
+              <a :href="'/storage/uploads/' + f.name" target="_blank"> {{ f.name }}</a> <separator /> {{ f.size}} <separator /> {{ f.type }}
             </div>
             <list-actions 
               :id="f.id" 
