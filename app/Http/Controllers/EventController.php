@@ -25,6 +25,19 @@ class EventController extends BaseController
   }
 
   /**
+   * Event
+   * 
+   * @param String $slug
+   * @param Event $event
+   */
+
+  public function show($slug = NULL, Event $event)
+  {
+    $event = $this->event->findOrFail($event->id);
+    return view($this->viewPath . 'event-show', ['title' => 'Veranstaltungen', 'event' => $event]);
+  }
+
+  /**
    * Events > Bildungskrippen
    */
 

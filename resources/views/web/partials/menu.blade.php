@@ -11,8 +11,8 @@
         <a href="{{ route('page.nursery') }}" class="{{ request()->routeIs('page.nursery') ? 'is-active' : '' }}">Bildungskrippen</a>
       </li>
       <li>
-        <a href="{{ route('page.events') }}" class="is-parent {{ request()->routeIs('page.events*') ? 'is-active' : '' }}">Veranstaltungen</a>
-        <ul style="{{ request()->routeIs('page.events*') ? 'display: block;' : 'display: none;' }}">
+        <a href="{{ route('page.events') }}" class="is-parent {{ request()->routeIs('page.event*') ? 'is-active' : '' }}">Veranstaltungen</a>
+        <ul style="{{ request()->routeIs('page.event*') ? 'display: block;' : 'display: none;' }}">
           <x-events-menu />
         </ul>
       </li>

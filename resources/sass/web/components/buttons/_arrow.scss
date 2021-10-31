@@ -20,6 +20,9 @@
   &.is-active,
   &:hover {
     background-image: url($url-icons + 'arrow-active-sm.svg');
+    &.is-right {
+      background-image: url($url-icons + 'arrow-active-right-sm.svg');
+    }
   }
 
   @include bp-md() {
@@ -31,6 +34,9 @@
     &.is-active,
     &:hover {
       background-image: url($url-icons + 'arrow-active-lg.svg');
+      &.is-right {
+        background-image: url($url-icons + 'arrow-active-right-lg.svg');
+      }
     }
 
     &.is-first {
