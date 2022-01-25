@@ -8,7 +8,7 @@
         <a href="{{ route('page.services') }}" class="{{ request()->routeIs('page.services') ? 'is-active' : '' }}">Angebot</a>
       </li>
       <li>
-        <a href="{{ route('page.nursery') }}" class="{{ request()->routeIs('page.nursery') ? 'is-active' : '' }}">Bildungskrippen</a>
+        <a href="{{ route('page.nursery') }}" class="{{ request()->routeIs('page.nursery') ? 'is-active' : '' }}">infans-Konzept</a>
       </li>
       <li>
         <a href="{{ route('page.events') }}" class="is-parent {{ request()->routeIs('page.event*') ? 'is-active' : '' }}">Veranstaltungen</a>
@@ -25,13 +25,13 @@
         <a href="{{ route('page.team') }}" class="{{ request()->routeIs('page.team') ? 'is-active' : '' }}">Team</a>
       </li>
       <li>
-        <a href="{{ route('page.network.members') }}" class="is-parent {{ request()->routeIs('page.network*') ? 'is-active' : '' }}">Netzwerk</a>
+        <a href="{{ route('page.network.organisations') }}" class="is-parent {{ request()->routeIs('page.network*') ? 'is-active' : '' }}">Netzwerk</a>
         <ul style="{{ request()->routeIs('page.network*') ? 'display: block;' : 'display: none;' }}">
           <li>
-            <a href="{{ route('page.network.members') }}" class="{{ request()->routeIs('page.network.members') ? 'is-active' : '' }}">Personen</a>
+            <a href="{{ route('page.network.organisations') }}" class="{{ request()->routeIs('page.network.organisations') ? 'is-active' : '' }}">Organisationen</a>
           </li>
           <li>
-            <a href="{{ route('page.network.organisations') }}" class="{{ request()->routeIs('page.network.organisations') ? 'is-active' : '' }}">Organisationen</a>
+            <a href="{{ route('page.network.members') }}" class="{{ request()->routeIs('page.network.members') ? 'is-active' : '' }}">Personen</a>
           </li>
         </ul>
       </li>

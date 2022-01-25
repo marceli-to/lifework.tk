@@ -16,7 +16,7 @@ Route::get('/logout', 'Auth\LoginController@logout');
 // Pages
 Route::get('/', 'PageController@index')->name('page.home');
 Route::get('/angebot', 'PageController@services')->name('page.services');
-Route::get('/bildungskrippen', 'PageController@nursery')->name('page.nursery');
+Route::get('/infans-konzept', 'PageController@nursery')->name('page.nursery');
 Route::get('/ueber-uns', 'PageController@about')->name('page.about');
 Route::get('/team', 'TeamController@index')->name('page.team');
 Route::get('/netzwerk', 'NetworkController@index')->name('page.network');

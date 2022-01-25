@@ -70,7 +70,7 @@ class FileController extends Controller
       DB::statement('INSERT INTO events_backup SELECT * FROM events;');
 
       // Clear table
-      EventModel::truncate();
+      DB::table('events')->delete();
 
       // Import new data
       \Excel::import(new \App\Imports\Events, $new_file, null, \Maatwebsite\Excel\Excel::XLSX);

@@ -36,7 +36,7 @@
             @endif
             @if ($event->host)
               <div class="list__item">
-                Moderator/in: {{$event->host}}
+                Moderator:in: {{$event->host}}
               </div>
             @endif
             @if ($event->dateDeadline)
