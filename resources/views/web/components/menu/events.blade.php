@@ -1,8 +1,8 @@
-@if ($events['nurseries']->count() > 0)
+{{-- @if ($events['nurseries']->count() > 0)
   <li>
     <a href="{{ route('page.events.nurseries') }}" class="{{ request()->routeIs('page.events.nurseries') ? 'is-active' : '' }}">für Bildungskrippen</a>
   </li>
-@endif
+@endif --}}
 @if ($events['kitas']->count() > 0)
   <li>
     <a href="{{ route('page.events.kitas') }}" class="{{ request()->routeIs('page.events.kitas') ? 'is-active' : '' }}">für Kitas</a>
