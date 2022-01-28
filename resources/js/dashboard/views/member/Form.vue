@@ -135,9 +135,9 @@ import LabelRequired from "@/components/ui/LabelRequired.vue";
 import Tabs from "@/components/ui/Tabs.vue";
 import ImageUpload from "@/components/images/Upload.vue";
 import ImageEdit from "@/views/member/images/Edit.vue";
-import FileUpload from "@/components/files/Upload.vue";
-import FileEdit from "@/components/files/Edit.vue";
-import FileActions from "@/components/files/Actions.vue";
+import FileUpload from "@/views/member/files/Upload.vue";
+import FileEdit from "@/views/member/files/Edit.vue";
+import FileActions from "@/views/member/files/Actions.vue";
 
 // Tabs config
 import tabsConfig from "@/views/member/config/tabs.js";

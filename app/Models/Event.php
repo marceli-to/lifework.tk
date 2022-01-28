@@ -26,6 +26,7 @@ class Event extends Base
     'isLeadership',
     'isCompany',
     'isOther',
+    'fmid'
   ];
 
   protected $casts = [

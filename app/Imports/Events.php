@@ -12,6 +12,7 @@ class Events implements ToModel
   */
   public function model(array $row)
   {
+    //dd($row);
     return new Event([
       'category'         => trim($row[0]),
       'title'            => trim($row[1]),
@@ -32,7 +33,8 @@ class Events implements ToModel
       'isKita'           => !empty($row[16]) ? trim($row[16]) : null,
       'isLeadership'     => !empty($row[17]) ? trim($row[17]) : null,
       'isCompany'        => !empty($row[18]) ? trim($row[18]) : null,
-      'isOther'          => !empty($row[19]) ? trim($row[19]) : null
+      'isOther'          => !empty($row[19]) ? trim($row[19]) : null,
+      'fmid'             => !empty($row[20]) ? trim($row[20]) : null,
     ]);
   }
 }

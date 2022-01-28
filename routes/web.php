@@ -29,7 +29,7 @@ Route::get('/kontakt', 'PageController@contact')->name('page.contact');
 
 // Page: Events
 Route::get('/veranstaltungen', 'EventController@index')->name('page.events');
-Route::get('/veranstaltung/{slug}/{event}', 'EventController@show')->name('page.event');
+Route::get('/veranstaltung/{slug}/{event:fmid}', 'EventController@show')->name('page.event');
 Route::get('/veranstaltungen/fuer-bildungskrippen', 'EventController@nurseries')->name('page.events.nurseries');
 Route::get('/veranstaltungen/fuer-kitas', 'EventController@kitas')->name('page.events.kitas');
 Route::get('/veranstaltungen/fuer-fuehrungspersonen', 'EventController@leaders')->name('page.events.leaders');
