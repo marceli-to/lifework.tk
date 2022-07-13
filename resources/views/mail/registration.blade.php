@@ -70,7 +70,7 @@
 <p class="signature">
   Freundliche Grüsse<br>
   lifework tk ag<br>
-  Untere Vogelsangstrasse 11<br>
+  Tössfeldstrasse 25<br>
   8400 Winterthur<br>
   mail@lifework.ch
 </p>
