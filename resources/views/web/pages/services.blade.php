@@ -37,7 +37,7 @@
         <p>Abgestimmt auf die Bedürfnisse und das Budget von Trägerschaften der familienergänzenden Betreuung, arrangieren wir Weiterbildung für Führungs- und Fachpersonen, die in ihrer Einrichtung die Qualität der Arbeit überdenken, verändern oder Neues anstossen möchten. Zum Wohl der Kinder und deren positiven Entwicklung und zugunsten einer stimmigen Zusammenarbeit zwischen allen Anspruchsgruppen.</p>
         <h3 class="is-service">infans-Konzept</h3>
         <ul>
-          <li>Einführung, Workshops und Coaching zum Konzept infans-Konzept Schweiz</li>
+          <li>Einführung, Workshops und Coaching zum infans-Konzept Schweiz</li>
           <li>Netzwerkveranstaltungen</li>
         </ul>
         <h3 class="is-service">Frühkindliche Bildung und Qualitätsentwicklung</h3>
