@@ -114,24 +114,7 @@
   }
 }
 
-// Link dialog, inline below the toolbar
-.editor-dialog {
-  background-color: $color-light;
-  border-bottom: 2px solid $color-light-grey;
-  display: grid;
-  gap: 12px;
-  padding: 16px;
-
-  label {
-    display: block;
-    margin-bottom: 4px;
-  }
-
-  input[type=text] {
-    background-color: $color-white;
-  }
-}
-
+// Link dialog (in a lightbox)
 .editor-dialog__url {
   display: flex;
   gap: 8px;
@@ -150,18 +133,4 @@
   input {
     width: auto;
   }
-}
-
-.editor-dialog__actions {
-  align-items: center;
-  display: flex;
-  gap: 16px;
-
-  a {
-    color: $color-dark-grey;
-  }
-}
-
-.editor-dialog__apply {
-  padding: 10px 20px;
 }

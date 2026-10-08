@@ -1,58 +1,60 @@
 <template>
-  <!-- Inline panel, not a <form>: the editor already sits inside the page's form -->
-  <div class="editor-dialog" v-if="isOpen" @keydown.enter.prevent="apply()" @keydown.esc.prevent="close()">
-    <div class="editor-dialog__row">
-      <label>Typ</label>
-      <div class="select-wrapper is-sm">
-        <select v-model="link.type">
-          <option v-for="(label, type) in types" :key="type" :value="type">{{ label }}</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="editor-dialog__row" v-if="link.type === 'url'">
-      <label>URL</label>
-      <div class="editor-dialog__url">
-        <div class="select-wrapper is-sm">
-          <select v-model="link.protocol">
-            <option value="https://">https://</option>
-            <option value="http://">http://</option>
+  <lightbox :open="isOpen" title="Link" @close="close()">
+    <form :id="formId" @submit.prevent="apply()">
+      <div class="form-row">
+        <label>Typ</label>
+        <div class="select-wrapper is-wide">
+          <select v-model="link.type">
+            <option v-for="(label, type) in types" :key="type" :value="type">{{ label }}</option>
           </select>
         </div>
-        <input type="text" ref="value" v-model="link.value" placeholder="www.example.com">
       </div>
-    </div>
 
-    <div class="editor-dialog__row" v-if="link.type === 'email'">
-      <label>E-Mail-Adresse</label>
-      <input type="text" ref="value" v-model="link.value" placeholder="name@lifework.ch">
-    </div>
+      <div class="form-row" v-if="link.type === 'url'">
+        <label>URL</label>
+        <div class="editor-dialog__url">
+          <div class="select-wrapper">
+            <select v-model="link.protocol">
+              <option value="https://">https://</option>
+              <option value="http://">http://</option>
+            </select>
+          </div>
+          <input type="text" ref="value" v-model="link.value" placeholder="www.example.com">
+        </div>
+      </div>
 
-    <div class="editor-dialog__row" v-if="link.type === 'tel'">
-      <label>Telefonnummer</label>
-      <input type="text" ref="value" v-model="link.value" placeholder="+41 44 000 00 00">
-    </div>
+      <div class="form-row" v-if="link.type === 'email'">
+        <label>E-Mail-Adresse</label>
+        <input type="text" ref="value" v-model="link.value" placeholder="name@lifework.ch">
+      </div>
 
-    <div class="editor-dialog__row">
-      <label>Titel (optional)</label>
-      <input type="text" v-model="link.title">
-    </div>
+      <div class="form-row" v-if="link.type === 'tel'">
+        <label>Telefonnummer</label>
+        <input type="text" ref="value" v-model="link.value" placeholder="+41 44 000 00 00">
+      </div>
 
-    <div class="editor-dialog__row" v-if="link.type === 'url'">
-      <label class="editor-dialog__checkbox">
-        <input type="checkbox" v-model="link.blank">
-        <span>In neuem Fenster öffnen</span>
-      </label>
-    </div>
+      <div :class="['form-row', { 'is-last': link.type !== 'url' }]">
+        <label>Titel (optional)</label>
+        <input type="text" v-model="link.title">
+      </div>
 
-    <div class="editor-dialog__actions">
-      <button type="button" class="editor-dialog__apply" @click="apply()">Übernehmen</button>
+      <div class="form-row is-last" v-if="link.type === 'url'">
+        <label class="editor-dialog__checkbox">
+          <input type="checkbox" v-model="link.blank">
+          <span>In neuem Fenster öffnen</span>
+        </label>
+      </div>
+    </form>
+    <template #footer>
+      <button type="submit" class="btn-primary is-sm" :form="formId">Übernehmen</button>
       <a href="javascript:;" v-if="isEditing" @click.prevent="remove()">Entfernen</a>
       <a href="javascript:;" @click.prevent="close()">Abbrechen</a>
-    </div>
-  </div>
+    </template>
+  </lightbox>
 </template>
 <script>
+import Lightbox from '@/components/ui/Lightbox.vue';
+
 const types = { url: 'URL', email: 'E-Mail', tel: 'Telefon' };
 
 const empty = () => ({ type: 'url', protocol: 'https://', value: '', title: '', blank: false });
@@ -73,6 +75,10 @@ function parse(href) {
 }
 
 export default {
+  components: {
+    Lightbox,
+  },
+
   props: {
     editor: { type: Object, required: true },
   },
@@ -80,6 +86,8 @@ export default {
   data() {
     return {
       types,
+      // Several editors on a page: each link form needs its own id
+      formId: `link-${Math.random().toString(36).slice(2)}`,
       isOpen: false,
       isEditing: false,
       link: empty(),
