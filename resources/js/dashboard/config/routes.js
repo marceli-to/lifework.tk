@@ -1,9 +1,6 @@
 import ErrorForbidden from '@/views/errors/Forbidden.vue';
 import ErrorNotFound from '@/views/errors/NotFound.vue';
 
-// Welcome
-import Home from '@/views/home/Index.vue';
-
 // Post
 import PostIndex from '@/views/post/Index.vue';
 import PostCreate from '@/views/post/Create.vue';
@@ -29,11 +26,10 @@ import MediaIndex from '@/views/media/Index.vue';
 
 const routes = [
 
-  // Home
+  // Home: no dashboard page, go to the posts
   {
-    name: 'home',
     path: '/administration',
-    component: Home,
+    redirect: { name: 'posts' },
   },
 
   // Post
