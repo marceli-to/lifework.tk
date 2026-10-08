@@ -22,7 +22,7 @@ class BlogController extends BaseController
 
   public function index()
   {
-    $posts = $this->post->published()->with('publishedImages')->orderBy('date', 'DESC')->get();
+    $posts = $this->post->published()->with('publishedImages')->orderBy('created_at', 'DESC')->orderBy('id', 'DESC')->get();
     return view($this->viewPath . 'blog', ['title' => 'Blog', 'posts' => $posts]);
   }
 }

@@ -23,7 +23,7 @@ class PostController extends Controller
    */
   public function get()
   {
-    return new DataCollection($this->post->orderBy('date', 'DESC')->get());
+    return new DataCollection($this->post->orderBy('created_at', 'DESC')->orderBy('id', 'DESC')->get());
   }
 
   /**
