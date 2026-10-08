@@ -22,7 +22,6 @@ Route::middleware('auth:sanctum')->group(function() {
   Route::get('user', 'Api\UserController@find');
 
   // Files
-  Route::get('files','Api\FileController@get');
   Route::get('files/fetch','Api\FileController@fetch');
   Route::get('file/restore','Api\FileController@restore');
   Route::get('file/import/{file}','Api\FileController@import');
@@ -78,7 +77,6 @@ Route::middleware('auth:sanctum')->group(function() {
   // Member files
   Route::get('member/files/{member}', 'Api\MemberFileController@get');
   Route::get('member/file/state/{memberFile}', 'Api\MemberFileController@toggle');
-  Route::put('member/file/{memberFile}', 'Api\MemberFileController@coords');
   Route::post('member/file', 'Api\MemberFileController@store');
   Route::post('member/file/order', 'Api\MemberFileController@order');
   Route::delete('member/file/{memberFile}', 'Api\MemberFileController@destroy');

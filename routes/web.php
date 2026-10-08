@@ -19,7 +19,7 @@ Route::get('/angebot', 'PageController@services')->name('page.services');
 Route::get('/infans-konzept', 'PageController@nursery')->name('page.nursery');
 Route::get('/ueber-uns', 'PageController@about')->name('page.about');
 Route::get('/team', 'TeamController@index')->name('page.team');
-Route::get('/netzwerk', 'NetworkController@index')->name('page.network');
+Route::redirect('/netzwerk', '/netzwerk/organisationen')->name('page.network');
 Route::get('/netzwerk/personen', 'NetworkController@members')->name('page.network.members');
 Route::get('/netzwerk/organisationen', 'NetworkController@organisations')->name('page.network.organisations');
 Route::get('/stimmen', 'TestimonialController@index')->name('page.testimonials');
@@ -38,10 +38,6 @@ Route::get('/veranstaltungen/fuer-andere', 'EventController@other')->name('page.
 
 // Url based images
 Route::get('/img/{template}/{filename}', 'ImageController@getResponse');
-
-Route::get('/confirmation', function () {
-  return new App\Mail\ConfirmationMail();
-});
 
 /*
 |--------------------------------------------------------------------------

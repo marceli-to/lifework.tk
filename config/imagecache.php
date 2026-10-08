@@ -53,7 +53,6 @@ return array(
   */
 
   'templates' => array(
-    'small' => 'Intervention\Image\Templates\Small',
     'large' => 'App\Filters\Image\Template\Large',
     'cache' => 'App\Filters\Image\Template\Cache',
 
@@ -61,7 +60,6 @@ return array(
     'shop' => 'App\Filters\Image\Template\Shop\Large',
     
     'thumbnail' => 'App\Filters\Image\Template\Thumbnail',
-    'portrait' => 'App\Filters\Image\Template\Portrait',
   ),
 
   /*

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class EventController extends BaseController
 {
+  protected $event;
+
   protected $viewPath = 'web.pages.';
 
   public function __construct(Event $event)
@@ -31,7 +33,7 @@ class EventController extends BaseController
    * @param Event $event
    */
 
-  public function show($slug = NULL, Event $event)
+  public function show($slug, Event $event)
   {
     $event = $this->event->findOrFail($event->id);
     return view($this->viewPath . 'event-show', ['title' => 'Veranstaltungen', 'event' => $event]);

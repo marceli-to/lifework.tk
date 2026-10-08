@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 class MemberCategoryController extends Controller
 {
+  protected $memberCategory;
+
   public function __construct(MemberCategory $memberCategory)
   {
     $this->memberCategory = $memberCategory;

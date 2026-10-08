@@ -7,6 +7,8 @@ use Illuminate\Queue\SerializesModels;
 
 class RegistrationMail extends Mailable
 {
+  public $data;
+
   use Queueable, SerializesModels;
 
   /**

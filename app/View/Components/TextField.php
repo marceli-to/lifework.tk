@@ -58,8 +58,8 @@ class TextField extends Component
    * Create a new component instance.
    *
    * @param $name
-   * @param $type
    * @param $label
+   * @param $type
    * @param $placeholder
    * @param $required
    * @param $css
@@ -67,7 +67,7 @@ class TextField extends Component
    * 
    * @return void
    */
-  public function __construct($name, $type = 'text', $label, $placeholder = NULL, $required = FALSE, $css = NULL, $userValue = NULL)
+  public function __construct($name, $label, $type = 'text', $placeholder = NULL, $required = FALSE, $css = NULL, $userValue = NULL)
   {
     $this->name = $name;
     $this->type = $type;

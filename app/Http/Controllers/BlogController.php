@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class BlogController extends BaseController
 {
+  protected $post;
+
   protected $viewPath = 'web.pages.';
 
   public function __construct(Post $post)

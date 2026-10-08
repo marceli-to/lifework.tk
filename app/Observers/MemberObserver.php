@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Cache;
 
 class MemberObserver
 {
+  protected $member;
+
   public function __construct(Member $member)
   {
     $this->member = $member;

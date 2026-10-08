@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 class TestimonialController extends Controller
 {
+  protected $testimonial;
+
   public function __construct(Testimonial $testimonial)
   {
     $this->testimonial = $testimonial;

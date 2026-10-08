@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 
 class MemberController extends Controller
 {
+  protected $member;
+
   public function __construct(Member $member)
   {
     $this->member = $member;

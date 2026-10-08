@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Cache;
 
 class PostImageObserver
 {
+  protected $postImage;
+
   public function __construct(PostImage $postImage)
   {
     $this->postImage = $postImage;

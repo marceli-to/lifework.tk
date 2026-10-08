@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
+  protected $event;
+
   public function __construct(Event $event)
   {
     $this->event = $event;

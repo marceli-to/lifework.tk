@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class TestimonialController extends BaseController
 {
+  protected $testimonial;
+
   protected $viewPath = 'web.pages.';
 
   public function __construct(Testimonial $testimonial)

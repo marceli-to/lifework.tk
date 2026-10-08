@@ -10,6 +10,8 @@ use Illuminate\Queue\InteractsWithQueue;
 
 class EventRegisterConfirm
 {
+  protected $eventSubscriber;
+
   /**
    * Create the event listener.
    *

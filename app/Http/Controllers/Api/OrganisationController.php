@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 class OrganisationController extends Controller
 {
+  protected $organisation;
+
   public function __construct(Organisation $organisation)
   {
     $this->organisation = $organisation;

@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Cache;
 
 class MemberFileObserver
 {
+  protected $memberFile;
+
   public function __construct(MemberFile $memberFile)
   {
     $this->memberFile = $memberFile;

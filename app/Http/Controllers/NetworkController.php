@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 class NetworkController extends BaseController
 {
+  protected $member;
+  protected $organisation;
+
   protected $viewPath = 'web.pages.';
 
   protected $category = 1;

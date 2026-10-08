@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Cache;
 
 class MemberImageObserver
 {
+  protected $memberImage;
+
   public function __construct(MemberImage $memberImage)
   {
     $this->memberImage = $memberImage;

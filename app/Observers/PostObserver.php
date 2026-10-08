@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Cache;
 
 class PostObserver
 {
+  protected $post;
+
   public function __construct(Post $post)
   {
     $this->post = $post;

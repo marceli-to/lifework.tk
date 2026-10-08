@@ -6,6 +6,8 @@ use Illuminate\Queue\SerializesModels;
 
 class EventRegister
 {
+  public $eventSubscriber;
+
   use Dispatchable, SerializesModels;
   
   /**

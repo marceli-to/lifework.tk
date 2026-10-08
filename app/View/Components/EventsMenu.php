@@ -5,6 +5,8 @@ use Illuminate\View\Component;
 
 class EventsMenu extends Component
 { 
+  public $event;
+
 
   public $events = [];
 

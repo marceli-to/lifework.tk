@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class TeamController extends BaseController
 {
+  protected $member;
+
   protected $viewPath = 'web.pages.';
 
   protected $category = 2;

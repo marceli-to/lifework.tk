@@ -13,3 +13,7 @@ npm-debug.log
 yarn-error.log
 INSTALL.TXT
 app.tar.gz
+
+# Database dumps
+*.sql
+*.sql.gz
