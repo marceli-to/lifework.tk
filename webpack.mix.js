@@ -1,4 +1,23 @@
 const mix = require('laravel-mix');
+const fs = require('fs');
+const path = require('path');
+
+// Webpack 4 ignores package.json "exports": map the Tiptap subpaths
+// (e.g. @tiptap/pm/state) to their ESM files by hand.
+const tiptapAliases = () => {
+    const scope = path.join(__dirname, 'node_modules/@tiptap');
+    const aliases = {};
+    fs.readdirSync(scope).forEach(name => {
+        const exports = require(path.join(scope, name, 'package.json')).exports || {};
+        Object.keys(exports).filter(key => key.startsWith('./') && key !== './package.json').forEach(key => {
+            const target = exports[key].import || exports[key].default;
+            if (typeof target === 'string') {
+                aliases[`@tiptap/${name}/${key.slice(2)}$`] = path.join(scope, name, target);
+            }
+        });
+    });
+    return aliases;
+};
 
 mix.webpackConfig({
     resolve: {
@@ -7,6 +26,7 @@ mix.webpackConfig({
             //'vue$': 'vue/dist/vue.esm.js',
             '@': __dirname + '/resources/js/dashboard/',
             '@events': __dirname + '/resources/js/web/events/',
+            ...tiptapAliases(),
         },
     },
 });

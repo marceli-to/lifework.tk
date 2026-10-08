@@ -28,11 +28,7 @@
       </div>
       <div class="form-row">
         <label>Text</label>
-        <tinymce-editor
-          :api-key="tinyApiKey"
-          :init="tinyConfig"
-          v-model="member.text"
-        ></tinymce-editor>
+        <rich-text-editor v-model="member.text"></rich-text-editor>
       </div>
     </div>
     <div v-show="tabs.image.active">
@@ -125,9 +121,8 @@ import { ArrowLeftIcon } from 'vue-feather-icons';
 // Mixins
 import ErrorHandling from "@/mixins/ErrorHandling";
 
-// TinyMCE
-import tinyConfig from "@/config/tiny.js";
-import TinymceEditor from "@tinymce/tinymce-vue";
+// Editor
+import RichTextEditor from "@/components/editor/Editor.vue";
 
 // Components
 import RadioButton from "@/components/ui/RadioButton.vue";
@@ -145,7 +140,7 @@ import tabsConfig from "@/views/member/config/tabs.js";
 export default {
   components: {
     ArrowLeftIcon,
-    TinymceEditor,
+    RichTextEditor,
     RadioButton,
     LabelRequired,
     Tabs,
@@ -192,10 +187,6 @@ export default {
 
       // Tabs config
       tabs: tabsConfig,
-
-      // TinyMCE
-      tinyConfig: tinyConfig,
-      tinyApiKey: 'vuaywur9klvlt3excnrd9xki1a5lj25v18b2j0d0nu5tbwro',
     };
   },
 

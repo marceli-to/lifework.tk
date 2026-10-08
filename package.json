@@ -2,12 +2,12 @@
     "private": true,
     "scripts": {
         "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "development": "cross-env NODE_ENV=development NODE_OPTIONS=--openssl-legacy-provider node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
         "watch-poll": "npm run watch -- --watch-poll",
-        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "hot": "cross-env NODE_ENV=development NODE_OPTIONS=--openssl-legacy-provider node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "production": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
         "axios": "^0.19.2",
@@ -24,7 +24,12 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "@tinymce/tinymce-vue": "^3.2.2",
+        "@tiptap/core": "^3.31.4",
+        "@tiptap/extension-link": "^3.31.4",
+        "@tiptap/extension-superscript": "^3.31.4",
+        "@tiptap/pm": "^3.31.4",
+        "@tiptap/starter-kit": "^3.31.4",
+        "@tiptap/vue-2": "^3.31.4",
         "cleave.js": "^1.6.0",
         "moment": "^2.26.0",
         "vue-advanced-cropper": "^0.16.5",
